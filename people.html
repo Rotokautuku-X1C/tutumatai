@@ -17,7 +17,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-portal{background:var(--pasture)!important;color:white!important;padding:0.4rem 1rem;border-radius:2px;font-weight:600!important;}
 .hero{margin-top:64px;position:relative;display:flex;align-items:flex-end;overflow:hidden;}
 .hero-img{position:absolute;inset:0;background-size:cover;background-position:center 40%;}
-.hero-img::after{content:'';}
+.hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(30,61,107,0.05) 0%,rgba(20,40,20,0.78) 100%);}
 .hero-content{position:relative;z-index:2;padding:0 4rem 3rem;}
 .eyebrow{font-size:0.65rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:0.7rem;display:flex;align-items:center;gap:0.7rem;font-weight:300;}
 .eyebrow::before{content:'';display:block;width:24px;height:1px;background:rgba(255,255,255,0.4);}
@@ -75,7 +75,12 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
 .advisor-sub{font-size:0.75rem;color:rgba(255,255,255,0.5);font-weight:300;}
 </style>
 </head><body>
-<!-- ✏️ EDIT: names, roles, elected dates. To add photo replace the person-photo-ph div. --><nav><a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a><ul class="nav-links"><li><a href="/tutumatai/about.html">About</a></li><li><a href="/tutumatai/farm.html">The Farm</a></li><li><a href="/tutumatai/people.html" class="active">Our People</a></li><li><a href="/tutumatai/education.html">Education</a></li><li><a href="/tutumatai/news.html">News</a></li><li><a href="/tutumatai/contact.html">Contact</a></li><li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li></ul></nav>
+<!-- ✏️ EDIT: names, roles, elected dates.
+     PHOTOS: upload to /images/ using these filenames:
+     COM: people-audine.jpg, people-raana.jpg, people-eruera.jpg, people-toni.jpg,
+          people-adrianne.jpg, people-ngarangi.jpg, people-james.jpg
+     Staff: staff-shane.jpg, staff-shepherd.jpg, staff-katarina.jpg
+     If a photo is missing the placeholder will show automatically. --><nav><a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a><ul class="nav-links"><li><a href="/tutumatai/about.html">About</a></li><li><a href="/tutumatai/farm.html">The Farm</a></li><li><a href="/tutumatai/people.html" class="active">Our People</a></li><li><a href="/tutumatai/education.html">Education</a></li><li><a href="/tutumatai/news.html">News</a></li><li><a href="/tutumatai/contact.html">Contact</a></li><li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li></ul></nav>
 <section class="hero" style="height:auto;">
   <img src="/tutumatai/images/people-hero.jpg" style="width:100%;display:block;position:relative;z-index:1;" alt="Our whānau">
   <div class="hero-content" style="position:absolute;bottom:0;z-index:2;">
@@ -92,73 +97,59 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
     <p class="lead">The Committee of Management is elected by shareholders at the Annual General Meeting. Members serve fixed terms and are accountable to all shareholders of the Incorporation.</p>
     <div class="com-grid">
       <div class="person-card">
-  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="person-photo" alt="Audine Grace-Kutia"> -->
-  <div class="person-photo-ph">👤</div>
+  <img src="/tutumatai/images/people-audine.jpg" class="person-photo" alt="Audine Grace-Kutia" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+  <div class="person-photo-ph" style="display:none;">👤</div>
   <div class="person-body">
     <div class="person-name">Audine Grace-Kutia</div>
     <div class="person-role">Chairperson</div>
-    
-    <!-- ✏️ Edit elected date below -->
     <div class="person-tenure">Elected: [Month Year]</div>
   </div>
 </div><div class="person-card">
-  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="person-photo" alt="Raana Walker"> -->
-  <div class="person-photo-ph">👤</div>
+  <img src="/tutumatai/images/people-raana.jpg" class="person-photo" alt="Raana Walker" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+  <div class="person-photo-ph" style="display:none;">👤</div>
   <div class="person-body">
     <div class="person-name">Raana Walker</div>
     <div class="person-role">Finance Portfolio</div>
-    
-    <!-- ✏️ Edit elected date below -->
     <div class="person-tenure">Elected: [Month Year]</div>
   </div>
 </div><div class="person-card">
-  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="person-photo" alt="Eruera Kawhia"> -->
-  <div class="person-photo-ph">👤</div>
+  <img src="/tutumatai/images/people-eruera.jpg" class="person-photo" alt="Eruera Kawhia" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+  <div class="person-photo-ph" style="display:none;">👤</div>
   <div class="person-body">
     <div class="person-name">Eruera Kawhia</div>
     <div class="person-role">Member</div>
-    
-    <!-- ✏️ Edit elected date below -->
     <div class="person-tenure">Elected: [Month Year]</div>
   </div>
 </div><div class="person-card">
-  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="person-photo" alt="Toni Walker"> -->
-  <div class="person-photo-ph">👤</div>
+  <img src="/tutumatai/images/people-toni.jpg" class="person-photo" alt="Toni Walker" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+  <div class="person-photo-ph" style="display:none;">👤</div>
   <div class="person-body">
     <div class="person-name">Toni Walker</div>
     <div class="person-role">Member — Homestead</div>
-    
-    <!-- ✏️ Edit elected date below -->
     <div class="person-tenure">Elected: [Month Year]</div>
   </div>
 </div><div class="person-card">
-  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="person-photo" alt="Adrianne Olsen-Hovell"> -->
-  <div class="person-photo-ph">👤</div>
+  <img src="/tutumatai/images/people-adrianne.jpg" class="person-photo" alt="Adrianne Olsen-Hovell" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+  <div class="person-photo-ph" style="display:none;">👤</div>
   <div class="person-body">
     <div class="person-name">Adrianne Olsen-Hovell</div>
     <div class="person-role">Member — Homestead</div>
-    
-    <!-- ✏️ Edit elected date below -->
     <div class="person-tenure">Elected: [Month Year]</div>
   </div>
 </div><div class="person-card">
-  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="person-photo" alt="Ngarangi Walker"> -->
-  <div class="person-photo-ph">👤</div>
+  <img src="/tutumatai/images/people-ngarangi.jpg" class="person-photo" alt="Ngarangi Walker" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+  <div class="person-photo-ph" style="display:none;">👤</div>
   <div class="person-body">
     <div class="person-name">Ngarangi Walker</div>
     <div class="person-role">Member</div>
-    
-    <!-- ✏️ Edit elected date below -->
     <div class="person-tenure">Elected: [Month Year]</div>
   </div>
 </div><div class="person-card">
-  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="person-photo" alt="James Milner"> -->
-  <div class="person-photo-ph">👤</div>
+  <img src="/tutumatai/images/people-james.jpg" class="person-photo" alt="James Milner" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+  <div class="person-photo-ph" style="display:none;">👤</div>
   <div class="person-body">
     <div class="person-name">James Milner</div>
     <div class="person-role">Member</div>
-    
-    <!-- ✏️ Edit elected date below -->
     <div class="person-tenure">Elected: [Month Year]</div>
   </div>
 </div>
@@ -172,24 +163,24 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
     <h2>The people on the ground</h2>
     <div class="staff-grid">
       <div class="staff-card">
-        <div class="staff-photo-ph">👤</div>
-        <!-- ✏️ Replace div above with <img src="images/photo.jpg" class="staff-photo" alt="Shane Sergent"> -->
-        <h4>Shane Sergent</h4>
-        <div class="role">Farm Manager</div>
-        <p>Managing day-to-day sheep and beef operations across Tutumatai's 836 ha effective area.</p>
-      </div>
-      <div class="staff-card">
-        <div class="staff-photo-ph">👤</div>
-        <h4>[Shepherd name]</h4>
-        <div class="role">Shepherd</div>
-        <p>Supporting all on-farm livestock operations including mustering, drenching, and daily stock welfare checks.</p>
-      </div>
-      <div class="staff-card">
-        <div class="staff-photo-ph">👤</div>
-        <h4>Katarina [surname]</h4>
-        <div class="role">Bookkeeper</div>
-        <p>Managing day-to-day financial records in partnership with Jacksons accounting.</p>
-      </div>
+  <img src="/tutumatai/images/staff-shane.jpg" class="staff-photo" alt="Shane Sergent" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+  <div class="staff-photo-ph" style="display:none;">👤</div>
+  <h4>Shane Sergent</h4>
+  <div class="role">Farm Manager</div>
+  <p>Managing day-to-day sheep and beef operations across Tutumatai's 836 ha effective area.</p>
+</div><div class="staff-card">
+  <img src="/tutumatai/images/staff-shepherd.jpg" class="staff-photo" alt="[Shepherd name]" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+  <div class="staff-photo-ph" style="display:none;">👤</div>
+  <h4>[Shepherd name]</h4>
+  <div class="role">Shepherd</div>
+  <p>Supporting all on-farm livestock operations including mustering, drenching, and daily stock welfare checks.</p>
+</div><div class="staff-card">
+  <img src="/tutumatai/images/staff-katarina.jpg" class="staff-photo" alt="Katarina [surname]" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+  <div class="staff-photo-ph" style="display:none;">👤</div>
+  <h4>Katarina [surname]</h4>
+  <div class="role">Bookkeeper</div>
+  <p>Managing day-to-day financial records in partnership with Jacksons accounting.</p>
+</div>
     </div>
   </div>
 </section>
@@ -198,17 +189,11 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   <div class="inner">
     <div class="sec-label">Serving the Incorporation</div>
     <h2 style="font-size:1.6rem;">Past Committee Members</h2>
-    <p style="font-size:0.85rem;color:var(--text-light);font-weight:300;margin-bottom:0.5rem;">✏️ Fill in names and dates below. Scroll to see all rows.</p>
+    <p style="font-size:0.85rem;color:var(--text-light);font-weight:300;margin-bottom:0.5rem;">Fill in names and dates below. Scroll to see all rows.</p>
     <div class="past-wrap">
       <table class="past-table">
         <thead>
-          <tr>
-            <th>Name</th>
-            <th>Role</th>
-            <th>Elected</th>
-            <th>Resigned</th>
-            <th>Notes</th>
-          </tr>
+          <tr><th>Name</th><th>Role</th><th>Elected</th><th>Resigned</th><th>Notes</th></tr>
         </thead>
         <tbody>
           <tr><td>[Name]</td><td>[Role]</td><td>[Month/Year]</td><td>[Month/Year]</td><td></td></tr>
