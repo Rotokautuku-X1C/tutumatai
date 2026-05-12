@@ -42,215 +42,225 @@ h2.light{color:white;}
 .photo-stack img{width:100%;height:200px;object-fit:cover;display:block;}
 .photo-stack img.tall{grid-column:1/-1;height:220px;}
 .photo-full{width:100%;height:420px;object-fit:cover;display:block;}
-.placeholder{background:linear-gradient(135deg,#3D5A3E,#2C3E2D);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.4rem;color:rgba(255,255,255,0.3);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;}
 footer{background:#111e2e;padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;border-top:3px solid var(--pasture);}
 footer .logo{font-family:'Dancing Script',cursive;font-size:1.3rem;color:white;}
 footer .logo span{display:block;font-family:'Source Sans 3',sans-serif;font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.3);font-weight:300;margin-top:2px;}
 footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
 
+.apply-banner{background:var(--pasture-mid);padding:1.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.apply-banner p{color:rgba(255,255,255,0.85);font-size:0.9rem;font-weight:300;}
+.apply-banner strong{color:white;}
+.btn-apply{display:inline-block;background:white;color:var(--pasture-mid);padding:0.6rem 1.4rem;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;white-space:nowrap;}
 .grant-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,104,40,0.12);border:1px solid rgba(74,104,40,0.12);margin-top:1.5rem;}
-.gs-item{background:white;padding:1.6rem;}
-.gs-num{font-family:'Dancing Script',cursive;font-size:2.2rem;color:var(--pasture);line-height:1;margin-bottom:0.2rem;}
-.gs-label{font-size:0.8rem;font-weight:600;color:var(--sky-dark);margin-bottom:0.3rem;}
-.gs-desc{font-size:0.76rem;color:var(--text-light);line-height:1.5;font-weight:300;}
-.recipients{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem;}
-.recipient-card{background:white;border-top:3px solid var(--pasture);overflow:hidden;}
-.recipient-photo{width:100%;height:180px;object-fit:cover;display:block;}
-.recipient-ph{width:100%;height:180px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:rgba(255,255,255,0.25);}
-.recipient-body{padding:1.2rem;}
-.recipient-name{font-family:'Dancing Script',cursive;font-size:1.2rem;color:var(--sky-dark);margin-bottom:0.1rem;}
-.recipient-course{font-size:0.72rem;color:var(--text-light);font-weight:300;line-height:1.4;margin-bottom:0.4rem;}
-.recipient-year{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--pasture);font-weight:600;}
-.recipient-result{font-size:0.72rem;color:var(--text-light);font-style:italic;margin-top:0.3rem;}
-.criteria-list{list-style:none;display:flex;flex-direction:column;gap:0.7rem;margin-top:1.5rem;max-width:700px;}
-.criteria-list li{display:flex;gap:0.8rem;align-items:flex-start;font-size:0.87rem;color:var(--text-mid);font-weight:300;line-height:1.6;}
-.criteria-list li::before{content:'';display:block;width:6px;height:6px;border-radius:50%;background:var(--pasture);flex-shrink:0;margin-top:0.5rem;}
-.apply-box{background:var(--pasture-mid);padding:3rem 4rem;text-align:center;}
-.apply-box h3{font-family:'Dancing Script',cursive;font-size:2rem;color:white;margin-bottom:0.8rem;}
-.apply-box p{color:rgba(255,255,255,0.75);font-size:0.95rem;font-weight:300;max-width:560px;margin:0 auto 1.8rem;line-height:1.7;}
-.btn-apply{display:inline-block;background:white;color:var(--pasture-mid);padding:0.85rem 2rem;font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;}
+.gs-item{background:white;padding:1.4rem;}
+.gs-num{font-family:'Dancing Script',cursive;font-size:2rem;color:var(--pasture);line-height:1;margin-bottom:0.2rem;}
+.gs-label{font-size:0.78rem;font-weight:600;color:var(--sky-dark);margin-bottom:0.3rem;}
+.gs-desc{font-size:0.74rem;color:var(--text-light);line-height:1.5;font-weight:300;}
+/* Recipients grid — small cards, all in one row per year */
+.recipients{display:grid;grid-template-columns:repeat(5,1fr);gap:0.8rem;margin-top:1.5rem;}
+.r-card{background:white;border-top:2px solid var(--pasture);overflow:hidden;}
+.r-photo{width:100%;height:110px;object-fit:cover;object-position:center top;display:block;}
+.r-ph{width:100%;height:110px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:rgba(255,255,255,0.25);}
+.r-body{padding:0.7rem;}
+.r-name{font-family:'Dancing Script',cursive;font-size:1rem;color:var(--sky-dark);line-height:1.2;margin-bottom:0.2rem;}
+.r-course{font-size:0.68rem;color:var(--text-light);font-weight:300;line-height:1.3;margin-bottom:0.3rem;}
+.r-result{font-size:0.65rem;color:var(--pasture);font-weight:600;font-style:italic;}
+/* Past recipients table */
+.past-wrap{max-height:320px;overflow-y:auto;margin-top:1.2rem;border:1px solid rgba(74,104,40,0.12);}
+.past-table{width:100%;border-collapse:collapse;font-size:0.8rem;}
+.past-table th{text-align:left;font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-light);font-weight:600;padding:0.55rem 0.8rem;border-bottom:2px solid rgba(74,104,40,0.2);background:white;position:sticky;top:0;}
+.past-table td{padding:0.55rem 0.8rem;border-bottom:1px solid rgba(74,104,40,0.08);color:var(--text-mid);font-weight:300;}
+.past-table tr:last-child td{border-bottom:none;}
+.criteria-list{list-style:none;display:flex;flex-direction:column;gap:0.6rem;margin-top:1.2rem;max-width:700px;}
+.criteria-list li{display:flex;gap:0.7rem;align-items:flex-start;font-size:0.85rem;color:var(--text-mid);font-weight:300;line-height:1.6;}
+.criteria-list li::before{content:'';display:block;width:5px;height:5px;border-radius:50%;background:var(--pasture);flex-shrink:0;margin-top:0.55rem;}
 </style>
 </head><body>
-<!-- ✏️ EDIT: update recipient names, courses, results and years as needed.
-         To add a photo for a recipient, upload to /images/ and follow the comment inside each recipient-card. --><nav><a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a><ul class="nav-links"><li><a href="/tutumatai/about.html">About</a></li><li><a href="/tutumatai/farm.html">The Farm</a></li><li><a href="/tutumatai/people.html">Our People</a></li><li><a href="/tutumatai/education.html" class="active">Education</a></li><li><a href="/tutumatai/news.html">News</a></li><li><a href="/tutumatai/contact.html">Contact</a></li><li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li></ul></nav>
+<!-- ✏️ EDIT: recipient names, courses, results. To add photo replace r-ph div. --><nav><a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a><ul class="nav-links"><li><a href="/tutumatai/about.html">About</a></li><li><a href="/tutumatai/farm.html">The Farm</a></li><li><a href="/tutumatai/people.html">Our People</a></li><li><a href="/tutumatai/education.html" class="active">Education</a></li><li><a href="/tutumatai/news.html">News</a></li><li><a href="/tutumatai/contact.html">Contact</a></li><li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li></ul></nav>
 <section class="hero" style="height:55vh;">
-  <div class="hero-img" style="background-image:url('/tutumatai/images/hero-valley-sunset.jpg');"></div>
+  <div class="hero-img" style="background-image:url('/tutumatai/images/education-hero.jpg');"></div>
   <div class="hero-content">
     <div class="eyebrow">Descendants of Raana Te Iti Walker &amp; Mere Roa Milner</div>
     <h1>Education Grants</h1>
-    <p class="hero-sub">Supporting the next generation of our whānau through tertiary education — investing in people as much as in land.</p>
+    <p class="hero-sub">Supporting the next generation of our whānau through tertiary education.</p>
   </div>
 </section>
 
-<!-- ✏️ Grant structure -->
+<!-- ✏️ Apply banner — update status and deadline each year -->
+<div class="apply-banner">
+  <p><strong>2026 applications are closed.</strong> Accepting applications for 2027 from February 2027. All descendants of Raana Te Iti Walker and Mere Roa Milner in tertiary study are eligible.</p>
+  <a href="#criteria" class="btn-apply">Eligibility Criteria →</a>
+</div>
+
 <section class="section cream">
   <div class="inner">
     <div class="sec-label">The programme</div>
     <h2>Investing in our people</h2>
-    <p class="lead">The Tutumatai Station Education Grant Programme was established in 2025 to provide financial support to descendants of Raana Te Iti Walker and Mere Roa Milner who are enrolled in tertiary study.</p>
+    <p class="lead">Established in 2025 to provide financial support to descendants in tertiary study. Up to $5,000 available annually across all recipients.</p>
     <div class="grant-grid">
-      <div class="gs-item"><div class="gs-num">$1,000</div><div class="gs-label">Base grant per year</div><div class="gs-desc">Available to eligible descendants enrolled full-time in two semesters of accredited tertiary study</div></div>
-      <div class="gs-item"><div class="gs-num">$1,200</div><div class="gs-label">Maximum incl. excellence bonus</div><div class="gs-desc">10–20% excellence bonus for distinction or high distinction results</div></div>
-      <div class="gs-item"><div class="gs-num">70/30</div><div class="gs-label">Payment structure</div><div class="gs-desc">70% upfront on signing acceptance. 30% on evidence of successful completion</div></div>
+      <div class="gs-item"><div class="gs-num">$1,000</div><div class="gs-label">Base grant per year</div><div class="gs-desc">For eligible descendants enrolled full-time across two semesters</div></div>
+      <div class="gs-item"><div class="gs-num">$1,200</div><div class="gs-label">Maximum incl. excellence bonus</div><div class="gs-desc">10–20% bonus for distinction or high distinction results</div></div>
+      <div class="gs-item"><div class="gs-num">70 / 30</div><div class="gs-label">Payment structure</div><div class="gs-desc">70% upfront on signing · 30% on evidence of completion</div></div>
     </div>
   </div>
 </section>
 
-<!-- ✏️ 2025 recipients — edit name, course, year, result for each card -->
+<!-- ✏️ 2026 recipients — edit name, course, result for each card -->
 <section class="section">
-  <div class="inner">
-    <div class="sec-label">2025 recipients</div>
-    <h2>Class of 2025</h2>
-    <p class="lead">Our inaugural cohort — five descendants making their whānau and tūpuna proud.</p>
-    <div class="recipients">
-      <div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Paige Walker"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#3D5A3E,#3D5A3E99);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Paige Walker</div>
-    <div class="recipient-course">AUT · Master of Applied Practice, IT</div>
-    <div class="recipient-year">2025</div>
-    <div class="recipient-result">High Distinction · 5× A/A+</div>
-  </div>
-</div><div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Beaudeen Walker Ansell"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#2d5a96,#2d5a9699);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Beaudeen Walker Ansell</div>
-    <div class="recipient-course">Open Polytechnic · Bachelor of Teaching (Primary)</div>
-    <div class="recipient-year">2025</div>
-    <div class="recipient-result">Distinction dominant · A/A+</div>
-  </div>
-</div><div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Georgia Walker-Miller"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#4a6828,#4a682899);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Georgia Walker-Miller</div>
-    <div class="recipient-course">EIT · Bachelor of Business Studies</div>
-    <div class="recipient-year">2025</div>
-    <div class="recipient-result">Distinction in 3 papers · 89, 86, 86</div>
-  </div>
-</div><div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Billi-Jo Tangaere"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#384f1e,#384f1e99);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Billi-Jo Tangaere</div>
-    <div class="recipient-course">University of Auckland · PGCert ICAMH</div>
-    <div class="recipient-year">2025</div>
-    <div class="recipient-result">All 4 papers passed</div>
-  </div>
-</div><div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Trinity Ormsby-Chemis"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#5a6a5a,#5a6a5a99);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Trinity Ormsby-Chemis</div>
-    <div class="recipient-course">EIT · Bachelor of Nursing</div>
-    <div class="recipient-year">2025</div>
-    <div class="recipient-result">Results pending</div>
-  </div>
-</div>
-    </div>
-  </div>
-</section>
-
-<!-- ✏️ 2026 recipients -->
-<section class="section sky">
   <div class="inner">
     <div class="sec-label">2026 recipients</div>
     <h2>Class of 2026</h2>
-    <p class="lead">Seven grants awarded for 2026 — a growing programme reflecting the strength and ambition of our whānau.</p>
     <div class="recipients">
-      <div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Beaudeen Walker Ansell"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#2d5a96,#2d5a9699);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Beaudeen Walker Ansell</div>
-    <div class="recipient-course">Open Polytechnic · BTeach Year 2</div>
-    <div class="recipient-year">2026</div>
-    <div class="recipient-result">Continuing</div>
+      <div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Beaudeen Walker Ansell"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#2d5a96,#2d5a9699);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Beaudeen Walker Ansell</div>
+    <div class="r-course">Open Poly · BTeach Yr 2</div>
+    <div class="r-result">Continuing</div>
   </div>
-</div><div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Kaia Walker-Waitoa"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#3D5A3E,#3D5A3E99);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Kaia Walker-Waitoa</div>
-    <div class="recipient-course">Te Wānanga o Raukawa · Heke Kawa Oranga</div>
-    <div class="recipient-year">2026</div>
-    <div class="recipient-result">Year 1</div>
+</div><div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Kaia Walker-Waitoa"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#3D5A3E,#3D5A3E99);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Kaia Walker-Waitoa</div>
+    <div class="r-course">Te Wānanga o Raukawa</div>
+    <div class="r-result">Year 1</div>
   </div>
-</div><div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Ripia Walker-Waitoa"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#4a6828,#4a682899);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Ripia Walker-Waitoa</div>
-    <div class="recipient-course">Open Polytechnic · Diploma of Psychology</div>
-    <div class="recipient-year">2026</div>
-    <div class="recipient-result">Year 1 · one semester</div>
+</div><div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Ripia Walker-Waitoa"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#4a6828,#4a682899);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Ripia Walker-Waitoa</div>
+    <div class="r-course">Open Poly · Dip Psychology</div>
+    <div class="r-result">Year 1 · 1 semester</div>
   </div>
-</div><div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Taurua Luke-Royal"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#384f1e,#384f1e99);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Taurua Luke-Royal</div>
-    <div class="recipient-course">Competenz · NZ Cert Engineering Fabrication L4</div>
-    <div class="recipient-year">2026</div>
-    <div class="recipient-result">Final year apprenticeship</div>
+</div><div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Taurua Luke-Royal"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#384f1e,#384f1e99);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Taurua Luke-Royal</div>
+    <div class="r-course">Competenz · Engineering L4</div>
+    <div class="r-result">Final yr apprentice</div>
   </div>
-</div><div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Te Manaia Apatu"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#5a6a5a,#5a6a5a99);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Te Manaia Apatu</div>
-    <div class="recipient-course">Massey · Certificate of Creative Arts (Fashion)</div>
-    <div class="recipient-year">2026</div>
-    <div class="recipient-result">Year 1</div>
+</div><div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Te Manaia Apatu"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#5a6a5a,#5a6a5a99);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Te Manaia Apatu</div>
+    <div class="r-course">Massey · Creative Arts (Fashion)</div>
+    <div class="r-result">Year 1</div>
   </div>
-</div><div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Tuakana Walker"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#2d5a96,#2d5a9699);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Tuakana Walker</div>
-    <div class="recipient-course">Te Wānanga o Raukawa · Poutuarongo Toiora Whānau</div>
-    <div class="recipient-year">2026</div>
-    <div class="recipient-result">Final year</div>
+</div><div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Tuakana Walker"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#2d5a96,#2d5a9699);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Tuakana Walker</div>
+    <div class="r-course">Te Wānanga o Raukawa</div>
+    <div class="r-result">Final year</div>
   </div>
-</div><div class="recipient-card">
-  <!-- ✏️ To add photo: upload to /images/ and replace the div below with <img src="images/photo.jpg" class="recipient-photo" alt="Georgia Walker-Miller"> -->
-  <div class="recipient-ph" style="background:linear-gradient(135deg,#4a6828,#4a682899);">👤</div>
-  <div class="recipient-body">
-    <div class="recipient-name">Georgia Walker-Miller</div>
-    <div class="recipient-course">EIT · Bachelor of Business Studies Year 2</div>
-    <div class="recipient-year">2026</div>
-    <div class="recipient-result">Late application approved</div>
+</div><div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Georgia Walker-Miller"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#4a6828,#4a682899);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Georgia Walker-Miller</div>
+    <div class="r-course">EIT · BBS Year 2</div>
+    <div class="r-result">Late app approved</div>
   </div>
 </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✏️ 2025 recipients -->
+<section class="section sky">
+  <div class="inner">
+    <div class="sec-label">2025 recipients</div>
+    <h2>Class of 2025</h2>
+    <div class="recipients">
+      <div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Paige Walker"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#3D5A3E,#3D5A3E99);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Paige Walker</div>
+    <div class="r-course">AUT · MAppPrac IT</div>
+    <div class="r-result">HD · 5× A/A+</div>
+  </div>
+</div><div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Beaudeen Walker Ansell"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#2d5a96,#2d5a9699);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Beaudeen Walker Ansell</div>
+    <div class="r-course">Open Poly · BTeach</div>
+    <div class="r-result">Distinction · A/A+</div>
+  </div>
+</div><div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Georgia Walker-Miller"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#4a6828,#4a682899);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Georgia Walker-Miller</div>
+    <div class="r-course">EIT · BBS</div>
+    <div class="r-result">Dist · 89, 86, 86</div>
+  </div>
+</div><div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Billi-Jo Tangaere"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#384f1e,#384f1e99);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Billi-Jo Tangaere</div>
+    <div class="r-course">Auckland · PGCert ICAMH</div>
+    <div class="r-result">All 4 passed</div>
+  </div>
+</div><div class="r-card">
+  <!-- ✏️ To add photo: replace div below with <img src="images/photo.jpg" class="r-photo" alt="Trinity Ormsby-Chemis"> -->
+  <div class="r-ph" style="background:linear-gradient(135deg,#5a6a5a,#5a6a5a99);">👤</div>
+  <div class="r-body">
+    <div class="r-name">Trinity Ormsby-Chemis</div>
+    <div class="r-course">EIT · BNursing</div>
+    <div class="r-result">Results pending</div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- ✏️ Past recipients table — add rows as years progress -->
+<section class="section cream">
+  <div class="inner">
+    <div class="sec-label">Previous recipients</div>
+    <h2 style="font-size:1.6rem;">All recipients</h2>
+    <p style="font-size:0.85rem;color:var(--text-light);font-weight:300;margin-bottom:0.5rem;">Add rows below as the programme grows.</p>
+    <div class="past-wrap">
+      <table class="past-table">
+        <thead><tr><th>Year</th><th>Name</th><th>Institution</th><th>Programme</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>2025</td><td>Paige Walker</td><td>AUT</td><td>MAppPrac IT</td><td>High Distinction</td></tr>
+          <tr><td>2025</td><td>Beaudeen Walker Ansell</td><td>Open Polytechnic</td><td>BTeach Primary</td><td>Distinction</td></tr>
+          <tr><td>2025</td><td>Georgia Walker-Miller</td><td>EIT</td><td>Bachelor of Business Studies</td><td>Distinction</td></tr>
+          <tr><td>2025</td><td>Billi-Jo Tangaere</td><td>University of Auckland</td><td>PGCert ICAMH</td><td>Passed</td></tr>
+          <tr><td>2025</td><td>Trinity Ormsby-Chemis</td><td>EIT</td><td>Bachelor of Nursing</td><td>Pending</td></tr>
+          <!-- ✏️ Add new rows here as: <tr><td>Year</td><td>Name</td><td>Institution</td><td>Programme</td><td>Result</td></tr> -->
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
 <!-- ✏️ Eligibility criteria -->
-<section class="section cream">
+<section class="section" id="criteria">
   <div class="inner">
     <div class="sec-label">Eligibility &amp; criteria</div>
     <h2>Who can apply</h2>
     <ul class="criteria-list">
       <li>All descendants of Raana Te Iti Walker and Mere Roa Milner are eligible to apply</li>
-      <li>Applicants must be enrolled in a course of tertiary study at a University, Polytechnic, Wānanga, or approved private training establishment</li>
+      <li>Must be enrolled in tertiary study at a University, Polytechnic, Wānanga, or approved private training establishment</li>
       <li>The course must lead to a qualification or further opportunity — including trades and apprenticeships</li>
-      <li>Evidence of enrolment or acceptance into the course must be provided</li>
+      <li>Evidence of enrolment must be provided</li>
       <li>Repeat applicants must provide evidence of achievement from the previous year</li>
       <li>Applicants developing farming and farm management skills are particularly encouraged</li>
-      <li>Grants are awarded at the discretion of the Committee of Management and are subject to available funds</li>
+      <li>Grants are awarded at the discretion of the Committee of Management subject to available funds</li>
     </ul>
   </div>
 </section>
-
-<!-- ✏️ Apply CTA -->
-<div class="apply-box">
-  <h3>Apply for a grant</h3>
-  <p>Applications open annually. Descendants studying in tertiary education are encouraged to apply before 31 March each year.</p>
-  <a href="#apply" class="btn-apply">Apply Now →</a>
-</div>
 <footer>
   <div class="logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · 307 Mangaoporo Road, RD 3, Ruatoria · Tairāwhiti</span></div>
   <p>tutumataistation.nz — Education</p>

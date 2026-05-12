@@ -42,7 +42,6 @@ h2.light{color:white;}
 .photo-stack img{width:100%;height:200px;object-fit:cover;display:block;}
 .photo-stack img.tall{grid-column:1/-1;height:220px;}
 .photo-full{width:100%;height:420px;object-fit:cover;display:block;}
-.placeholder{background:linear-gradient(135deg,#3D5A3E,#2C3E2D);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.4rem;color:rgba(255,255,255,0.3);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;}
 footer{background:#111e2e;padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;border-top:3px solid var(--pasture);}
 footer .logo{font-family:'Dancing Script',cursive;font-size:1.3rem;color:white;}
 footer .logo span{display:block;font-family:'Source Sans 3',sans-serif;font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.3);font-weight:300;margin-top:2px;}
@@ -97,21 +96,11 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
 .val-card p{font-size:0.82rem;color:var(--text-light);line-height:1.65;font-weight:300;}
 </style>
 </head><body>
-
-<!-- ╔═════════════════════════════════════════════════════════════╗
-     ║  HOW TO EDIT THIS PAGE                                      ║
-     ║  1. Find the text you want to change using Ctrl+F / Cmd+F   ║
-     ║  2. Edit the text directly — stay between the HTML tags     ║
-     ║  3. To swap a photo: upload new image to the /images/       ║
-     ║     folder in your repo, then find the src="images/..."     ║
-     ║     line and change the filename                            ║
-     ║  4. Do NOT edit the <style> or <script> sections            ║
-     ╚═════════════════════════════════════════════════════════════╝ -->
-<nav><a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a><ul class="nav-links"><li><a href="/tutumatai/about.html">About</a></li><li><a href="/tutumatai/farm.html">The Farm</a></li><li><a href="/tutumatai/people.html">Our People</a></li><li><a href="/tutumatai/education.html">Education</a></li><li><a href="/tutumatai/news.html">News</a></li><li><a href="/tutumatai/contact.html">Contact</a></li><li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li></ul></nav>
+<!-- ✏️ EDIT: change text between tags. To swap a photo change the filename in the bg() style attribute. --><nav><a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a><ul class="nav-links"><li><a href="/tutumatai/about.html">About</a></li><li><a href="/tutumatai/farm.html">The Farm</a></li><li><a href="/tutumatai/people.html">Our People</a></li><li><a href="/tutumatai/education.html">Education</a></li><li><a href="/tutumatai/news.html">News</a></li><li><a href="/tutumatai/contact.html">Contact</a></li><li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li></ul></nav>
 <section class="hero" style="height:90vh;">
-  <div class="hero-img" style="background-image:url('/tutumatai/images/hero-valley-sunset.jpg');"></div>
+  <div class="hero-img" style="background-image:url('/tutumatai/images/home-hero.jpg');"></div>
+  <!-- ✏️ Station identity bottom right — edit text here -->
   <div class="hero-identity">
-    <!-- ✏️ Station name overlay on hero photo -->
     <div class="sname">Tutumatai Station</div>
     <div class="ssub">Rotokautuku X1C Incorporation</div>
     <div class="saddr">307 Mangaoporo Road, RD 3, Ruatoria</div>
@@ -128,7 +117,7 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   </div>
 </section>
 
-<!-- ✏️ Stats strip — change the numbers and labels -->
+<!-- ✏️ Stats — change numbers and labels -->
 <div class="stats-strip">
   <div class="stat"><div class="stat-num">1,428 ha</div><div class="stat-label">Of ancestral whenua</div></div>
   <div class="stat"><div class="stat-num">836 ha</div><div class="stat-label">Effective farming area</div></div>
@@ -136,8 +125,8 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   <div class="stat"><div class="stat-num">106+</div><div class="stat-label">Paddocks across the station</div></div>
 </div>
 
-<!-- ✏️ Pepeha ticker — add/remove/edit lines between the span tags -->
-<div class="ticker"><div class="ticker-inner"><span class="ticker-item">Ko Hikurangi ō mātou maunga</span><span class="ticker-item">Ko Mangaoporo raua ko Waiapu ā mātou ngā awa</span><span class="ticker-item">Ko Horouta ō mātou waka</span><span class="ticker-item">Ko Ngāti Rangi ō mātou hapū · Ko Ngāti Porou ō mātou iwi</span><span class="ticker-item">Ko Tutumatai ō mātou whenua</span><span class="ticker-item">Ko Raana Te Iti Walker rāua ko Mere Roa Milner ō mātou tūpuna i heke mai ki tēnei whenua</span><span class="ticker-item">Mō ngā uri whakatipu — for the generations yet to come</span><span class="ticker-item">Ko Hikurangi ō mātou maunga</span><span class="ticker-item">Ko Waiapu, ko Mangaoparo ō mātou awa</span><span class="ticker-item">Ko Horouta ō mātou waka</span><span class="ticker-item">Ko Ngāti Rangi ō mātou hapū · Ko Ngāti Porou ō mātou iwi</span><span class="ticker-item">Ko Tutumatai ō mātou whenua</span><span class="ticker-item">Ko Raana Te Iti Walker rāua ko Mere Roa Milner ō mātou tūpuna i heke mai ki tēnei whenua</span><span class="ticker-item">Mō ngā uri whakatipu — for the generations yet to come</span></div></div>
+<!-- ✏️ Pepeha ticker — edit lines between span tags -->
+<div class="ticker"><div class="ticker-inner"><span class="ticker-item">Ko Hikurangi ō mātou maunga</span><span class="ticker-item">Ko Waiapu, ko Mangaoparo ō mātou awa</span><span class="ticker-item">Ko Horouta ō mātou waka</span><span class="ticker-item">Ko Ngāti Rangi ō mātou hapū · Ko Ngāti Porou ō mātou iwi</span><span class="ticker-item">Ko Tutumatai ō mātou whenua</span><span class="ticker-item">Ko Raana Te Iti Walker rāua ko Mere Roa Milner ō mātou tūpuna i heke mai ki tēnei whenua</span><span class="ticker-item">Mō ngā uri whakatipu — for the generations yet to come</span><span class="ticker-item">Ko Hikurangi ō mātou maunga</span><span class="ticker-item">Ko Waiapu, ko Mangaoparo ō mātou awa</span><span class="ticker-item">Ko Horouta ō mātou waka</span><span class="ticker-item">Ko Ngāti Rangi ō mātou hapū · Ko Ngāti Porou ō mātou iwi</span><span class="ticker-item">Ko Tutumatai ō mātou whenua</span><span class="ticker-item">Ko Raana Te Iti Walker rāua ko Mere Roa Milner ō mātou tūpuna i heke mai ki tēnei whenua</span><span class="ticker-item">Mō ngā uri whakatipu — for the generations yet to come</span></div></div>
 
 <!-- ✏️ About section -->
 <section class="section" style="padding:5rem 4rem;">
@@ -145,20 +134,19 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
     <div>
       <div class="sec-label">Who we are</div>
       <h2>A sacred thread connecting us to the land</h2>
-      <p class="body-p">The hill that rises 473 metres behind the homestead has carried the name Tutumatai since it was given by our tūpuna Uepōhatu as a sentinel over the lands that came under his mana. Beside it stands Tutuokura, its companion sentinel. These are not just farm features. They are named by tūpuna.</p>
+      <p class="body-p">The hill that rises 473 metres behind the homestead has carried the name Tutumatai since it was given by our tūpuna Uepōhatu as a sentinel over the lands that came under his mana. Beside it stands Tutukura, its companion sentinel. These are not just farm features. They are named by tūpuna.</p>
       <p class="body-p">On this whenua sits the urupā of Umuariki — grandson of Uepōhatu, grandfather of Ngakonui — whose pā occupied this very ground and whose name our urupā carries. We are Ngāti Rangi, and our tūpuna rest here.</p>
       <p class="body-p">Tutumatai Station is operated by Rotokautuku X1C Incorporation, governed by elected directors on behalf of 78 shareholders and their whānau. We farm this land. We protect it. And we will return it to those who come after us in better shape than we found it.</p>
     </div>
     <div class="photo-stack">
-      <!-- ✏️ To swap: upload new image to /images/ and change the filename in src="" -->
-      <img src="/tutumatai/images/farm-ugv-track.jpg" alt="Farm operations" class="tall">
-      <img src="/tutumatai/images/cattle-on-hill.jpg" alt="Cattle on the station hills">
-      <img src="/tutumatai/images/farm-homestead.jpg" alt="Station homestead">
+      <!-- ✏️ Swap photos: change filename after images/ in each src -->
+      <img src="/tutumatai/images/home-about-1.jpg" alt="Farm operations" class="tall">
+      <img src="/tutumatai/images/home-about-2.jpg" alt="Cattle on the station hills">
+      <img src="/tutumatai/images/home-about-3.jpg" alt="Station homestead">
     </div>
   </div>
 </section>
 
-<!-- ✏️ Site zones -->
 <section class="section sky">
   <div style="text-align:center;margin-bottom:3rem;">
     <div class="sec-label" style="justify-content:center;">Explore the site</div>
@@ -195,12 +183,12 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   </div>
 </section>
 
-<!-- ✏️ Values — change title and body for each card -->
 <section class="section cream">
   <div class="inner">
     <div class="sec-label">Our values</div>
     <h2>What guides us</h2>
     <div class="values-grid">
+      <!-- ✏️ Edit value title and body text -->
       <div class="val-card"><h3>Integrity</h3><p>Our moral compass — guiding us to make ethical choices that uphold the trust placed in us by our shareholders, our community, and the land itself.</p></div>
       <div class="val-card"><h3>Honesty</h3><p>The cornerstone of our relationships. Trust is built and maintained through open, transparent communication with our shareholders and whānau.</p></div>
       <div class="val-card"><h3>Kaitiakitanga</h3><p>Mō ngā uri whakatipu. We are caretakers of the land for future generations — committed to leaving it in better shape than we found it.</p></div>
