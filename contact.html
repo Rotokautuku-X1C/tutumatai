@@ -42,7 +42,6 @@ h2.light{color:white;}
 .photo-stack img{width:100%;height:200px;object-fit:cover;display:block;}
 .photo-stack img.tall{grid-column:1/-1;height:220px;}
 .photo-full{width:100%;height:420px;object-fit:cover;display:block;}
-.placeholder{background:linear-gradient(135deg,#3D5A3E,#2C3E2D);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.4rem;color:rgba(255,255,255,0.3);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;}
 footer{background:#111e2e;padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;border-top:3px solid var(--pasture);}
 footer .logo{font-family:'Dancing Script',cursive;font-size:1.3rem;color:white;}
 footer .logo span{display:block;font-family:'Source Sans 3',sans-serif;font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.3);font-weight:300;margin-top:2px;}
@@ -53,8 +52,7 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
 .contact-block h4{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--pasture);font-weight:600;margin-bottom:0.5rem;}
 .contact-block p{font-size:0.9rem;color:var(--text-mid);font-weight:300;line-height:1.6;}
 .contact-block a{color:var(--sky);text-decoration:none;}
-.map-ph{width:100%;height:300px;background:linear-gradient(135deg,#e8f0f8,#d0e4f0);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;border:1px solid rgba(45,90,150,0.15);}
-.map-ph p{font-size:0.8rem;color:var(--text-light);text-align:center;font-weight:300;}
+.map-ph{width:100%;height:280px;background:linear-gradient(135deg,#e8f0f8,#d0e4f0);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;border:1px solid rgba(45,90,150,0.15);}
 .contact-form{background:white;padding:2rem;}
 .form-row{margin-bottom:1.2rem;}
 .form-row label{display:block;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-light);font-weight:600;margin-bottom:0.4rem;}
@@ -67,9 +65,10 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
 .portal-btn{display:inline-block;background:var(--pasture);color:white;padding:0.8rem 1.8rem;font-size:0.8rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;}
 </style>
 </head><body>
-<!-- ✏️ EDIT: update address, email addresses, and enquiry types as needed --><nav><a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a><ul class="nav-links"><li><a href="/tutumatai/about.html">About</a></li><li><a href="/tutumatai/farm.html">The Farm</a></li><li><a href="/tutumatai/people.html">Our People</a></li><li><a href="/tutumatai/education.html">Education</a></li><li><a href="/tutumatai/news.html">News</a></li><li><a href="/tutumatai/contact.html" class="active">Contact</a></li><li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li></ul></nav>
+<!-- ✏️ EDIT: update address, phone, email, and enquiry types as needed. --><nav><a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a><ul class="nav-links"><li><a href="/tutumatai/about.html">About</a></li><li><a href="/tutumatai/farm.html">The Farm</a></li><li><a href="/tutumatai/people.html">Our People</a></li><li><a href="/tutumatai/education.html">Education</a></li><li><a href="/tutumatai/news.html">News</a></li><li><a href="/tutumatai/contact.html" class="active">Contact</a></li><li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li></ul></nav>
+<!-- ✏️ Hero photo: change contact-hero.jpg to swap -->
 <section class="hero" style="height:55vh;">
-  <div class="hero-img" style="background-image:url('/tutumatai/images/farm-homestead.jpg');"></div>
+  <div class="hero-img" style="background-image:url('/tutumatai/images/contact-hero.jpg');"></div>
   <div class="hero-content">
     <div class="eyebrow">Get in touch · Shareholder enquiries · Farm</div>
     <h1>Contact Us</h1>
@@ -83,8 +82,7 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
       <div>
         <div class="sec-label">Get in touch</div>
         <h2>We'd love to hear from you</h2>
-
-        <!-- ✏️ Update address, phone, and email details -->
+        <!-- ✏️ Update contact details -->
         <div class="contact-block">
           <h4>Physical address</h4>
           <p>Tutumatai Station<br>307 Mangaoporo Road, RD 3<br>Ruatoria, Tairāwhiti 4082</p>
@@ -103,10 +101,9 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
         </div>
         <div class="map-ph">
           <p style="font-size:1.5rem;">📍</p>
-          <p>Mangaoporo Road, Ruatoria · Tairāwhiti<br><span style="font-size:0.7rem;opacity:0.6;">Interactive map coming soon</span></p>
+          <p style="font-size:0.8rem;color:var(--text-light);text-align:center;font-weight:300;">Mangaoporo Road, Ruatoria · Tairāwhiti<br><span style="font-size:0.7rem;opacity:0.6;">Interactive map coming soon</span></p>
         </div>
       </div>
-
       <div>
         <div class="sec-label">Send a message</div>
         <h2>Enquiry form</h2>

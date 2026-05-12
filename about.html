@@ -42,37 +42,33 @@ h2.light{color:white;}
 .photo-stack img{width:100%;height:200px;object-fit:cover;display:block;}
 .photo-stack img.tall{grid-column:1/-1;height:220px;}
 .photo-full{width:100%;height:420px;object-fit:cover;display:block;}
-.placeholder{background:linear-gradient(135deg,#3D5A3E,#2C3E2D);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.4rem;color:rgba(255,255,255,0.3);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;}
 footer{background:#111e2e;padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;border-top:3px solid var(--pasture);}
 footer .logo{font-family:'Dancing Script',cursive;font-size:1.3rem;color:white;}
 footer .logo span{display:block;font-family:'Source Sans 3',sans-serif;font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.3);font-weight:300;margin-top:2px;}
 footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
 
-.tl{display:flex;flex-direction:column;gap:0;max-width:800px;margin:2rem auto 0;}
-.tl-item{display:grid;grid-template-columns:80px 1fr;gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid rgba(74,104,40,0.12);}
-.tl-item:last-child{border-bottom:none;}
-.tl-year{font-family:'Dancing Script',cursive;font-size:1.6rem;color:var(--pasture);line-height:1;padding-top:0.1rem;}
-.tl-content h4{font-size:0.9rem;font-weight:600;color:var(--sky-dark);margin-bottom:0.3rem;}
-.tl-content p{font-size:0.82rem;color:var(--text-light);line-height:1.6;font-weight:300;}
 .founders{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;max-width:900px;margin:2rem auto 0;}
 .founder-photos{display:flex;gap:1.5rem;justify-content:center;}
 .founder-card{text-align:center;}
 .founder-card img{width:160px;height:200px;object-fit:cover;object-position:center top;filter:grayscale(20%);display:block;margin:0 auto 0.8rem;}
 .founder-card .fname{font-family:'Dancing Script',cursive;font-size:1.3rem;color:var(--sky-dark);}
 .founder-card .fdates{font-size:0.72rem;color:var(--text-light);letter-spacing:0.08em;margin-top:0.1rem;}
+.tl{display:flex;flex-direction:column;gap:0;max-width:800px;margin:2rem auto 0;}
+.tl-item{display:grid;grid-template-columns:80px 1fr;gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid rgba(74,104,40,0.12);}
+.tl-item:last-child{border-bottom:none;}
+.tl-year{font-family:'Dancing Script',cursive;font-size:1.6rem;color:var(--pasture);line-height:1;padding-top:0.1rem;}
+.tl-content h4{font-size:0.9rem;font-weight:600;color:var(--sky-dark);margin-bottom:0.3rem;}
+.tl-content p{font-size:0.82rem;color:var(--text-light);line-height:1.6;font-weight:300;}
 .gov-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(45,90,150,0.1);border:1px solid rgba(45,90,150,0.1);margin-top:2rem;}
 .gov-item{background:white;padding:1.5rem;}
 .gov-item h4{font-size:0.85rem;font-weight:600;color:var(--sky-dark);margin-bottom:0.4rem;}
 .gov-item p{font-size:0.78rem;color:var(--text-light);line-height:1.55;font-weight:300;}
-.past-table{width:100%;border-collapse:collapse;margin-top:1.5rem;font-size:0.84rem;}
-.past-table th{text-align:left;font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-light);font-weight:600;padding:0.6rem 1rem;border-bottom:2px solid rgba(74,104,40,0.2);}
-.past-table td{padding:0.75rem 1rem;border-bottom:1px solid rgba(74,104,40,0.08);color:var(--text-mid);font-weight:300;}
-.past-table tr:last-child td{border-bottom:none;}
 </style>
 </head><body>
-<!-- ✏️ EDIT: change text between HTML tags. To swap photos change the src="" filename. --><nav><a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a><ul class="nav-links"><li><a href="/tutumatai/about.html" class="active">About</a></li><li><a href="/tutumatai/farm.html">The Farm</a></li><li><a href="/tutumatai/people.html">Our People</a></li><li><a href="/tutumatai/education.html">Education</a></li><li><a href="/tutumatai/news.html">News</a></li><li><a href="/tutumatai/contact.html">Contact</a></li><li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li></ul></nav>
+<!-- ✏️ EDIT: change text between tags. To swap photos change filename in src attributes. --><nav><a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a><ul class="nav-links"><li><a href="/tutumatai/about.html" class="active">About</a></li><li><a href="/tutumatai/farm.html">The Farm</a></li><li><a href="/tutumatai/people.html">Our People</a></li><li><a href="/tutumatai/education.html">Education</a></li><li><a href="/tutumatai/news.html">News</a></li><li><a href="/tutumatai/contact.html">Contact</a></li><li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li></ul></nav>
+<!-- ✏️ Hero photo: change about-hero.jpg to swap -->
 <section class="hero" style="height:55vh;">
-  <div class="hero-img" style="background-image:url('/tutumatai/images/farm-homestead.jpg');"></div>
+  <div class="hero-img" style="background-image:url('/tutumatai/images/about-hero.jpg');"></div>
   <div class="hero-content">
     <div class="eyebrow">Rotokautuku X1C Incorporation · Est. Tairāwhiti</div>
     <h1>About Tutumatai Station</h1>
@@ -80,19 +76,18 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   </div>
 </section>
 
-<!-- ✏️ Founders section -->
+<!-- ✏️ Founders section — photos: tupuna-raana-walker.jpg and tupuna-mere-roa-milner.jpg -->
 <section class="section cream">
   <div class="inner">
     <div class="founders">
       <div class="founder-photos">
         <div class="founder-card">
-          <!-- ✏️ To swap photo: upload to /images/ and change filename -->
-          <img src="/tutumatai/images/tupuna-raana-walker.png" alt="Raana Te Iti Walker">
+          <img src="/tutumatai/images/tupuna-raana-walker.jpg" alt="Raana Te Iti Walker">
           <div class="fname">Raana Te Iti Walker</div>
           <div class="fdates">Tūpuna · Founder</div>
         </div>
         <div class="founder-card">
-          <img src="/tutumatai/images/tupuna-mere-roa-milner.png" alt="Mere Roa Milner">
+          <img src="/tutumatai/images/tupuna-mere-roa-milner.jpg" alt="Mere Roa Milner">
           <div class="fname">Mere Roa Milner</div>
           <div class="fdates">Tūpuna · Founder</div>
         </div>
@@ -107,47 +102,17 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   </div>
 </section>
 
-<!-- ✏️ History timeline — add/edit/remove tl-item blocks -->
+<!-- ✏️ History timeline — add/remove tl-item blocks to update -->
 <section class="section">
   <div class="inner">
     <div class="sec-label">Our history</div>
     <h2>A history rooted in whenua</h2>
     <div class="tl">
-      <div class="tl-item">
-        <div class="tl-year">Est.</div>
-        <div class="tl-content">
-          <h4>Rotokautuku X1C Incorporation formed</h4>
-          <p>The Incorporation was established under Te Ture Whenua Māori Act to govern and protect the ancestral land at Tutumatai for the benefit of all shareholders and their descendants.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-year">2023</div>
-        <div class="tl-content">
-          <h4>New Committee of Management elected</h4>
-          <p>A new governance era begins with a Committee committed to transparency, accountability, and long-term stewardship of the whenua and the business.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-year">2025</div>
-        <div class="tl-content">
-          <h4>Education Grant Programme launched</h4>
-          <p>The Incorporation formally establishes a grant programme for descendants of Raana and Mere Roa in tertiary education — investing in the next generation.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-year">2025</div>
-        <div class="tl-content">
-          <h4>Farm Environment Plan completed</h4>
-          <p>LandVision Ltd completes a comprehensive Farm Environment Plan — mapping all 1,428 ha, assessing land capability, and establishing environmental commitments for the next generation.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-year">2026</div>
-        <div class="tl-content">
-          <h4>Digital modernisation underway</h4>
-          <p>Microsoft 365 deployment and this website mark a new era in governance transparency and shareholder communication for the Incorporation.</p>
-        </div>
-      </div>
+      <div class="tl-item"><div class="tl-year">Est.</div><div class="tl-content"><h4>Rotokautuku X1C Incorporation formed</h4><p>The Incorporation was established under Te Ture Whenua Māori Act to govern and protect the ancestral land at Tutumatai for the benefit of all shareholders and their descendants.</p></div></div>
+      <div class="tl-item"><div class="tl-year">2023</div><div class="tl-content"><h4>New Committee of Management elected</h4><p>A new governance era begins with a Committee committed to transparency, accountability, and long-term stewardship of the whenua and the business.</p></div></div>
+      <div class="tl-item"><div class="tl-year">2025</div><div class="tl-content"><h4>Education Grant Programme launched</h4><p>The Incorporation formally establishes a grant programme for descendants of Raana and Mere Roa in tertiary education — investing in the next generation.</p></div></div>
+      <div class="tl-item"><div class="tl-year">2025</div><div class="tl-content"><h4>Farm Environment Plan completed</h4><p>LandVision Ltd completes a comprehensive Farm Environment Plan — mapping all 1,428 ha and establishing environmental commitments for the next generation.</p></div></div>
+      <div class="tl-item"><div class="tl-year">2026</div><div class="tl-content"><h4>Digital modernisation underway</h4><p>Microsoft 365 deployment and this website mark a new era in governance transparency and shareholder communication.</p></div></div>
     </div>
   </div>
 </section>
@@ -157,7 +122,7 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   <div class="inner">
     <div class="sec-label">Governance</div>
     <h2>How we are governed</h2>
-    <p class="lead">Rotokautuku X1C Incorporation is governed under Te Ture Whenua Māori Act by an elected Committee of Management (COM) accountable to 78 shareholders.</p>
+    <p class="lead">Rotokautuku X1C Incorporation is governed under Te Ture Whenua Māori Act by an elected Committee of Management accountable to 78 shareholders.</p>
     <div class="gov-grid">
       <div class="gov-item"><h4>Committee of Management</h4><p>An elected board of directors responsible for all governance decisions — strategy, finances, operations, and shareholder relations.</p></div>
       <div class="gov-item"><h4>78 Shareholders</h4><p>All descendants of Raana and Mere Roa Walker. Shareholders vote at AGMs, receive annual reports, and are entitled to apply for education grants.</p></div>
