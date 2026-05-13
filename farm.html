@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>The Farm — Tutumatai Station</title>
+<link rel="icon" href="/tutumatai/images/favicon.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 :root{--sky:#2d5a96;--sky-dark:#1e3d6b;--pasture:#4a6828;--pasture-mid:#384f1e;--pasture-light:#607040;--off-white:#f4f7f0;--light-sky:#e8f0f8;--cream:#faf8f2;--text:#1a2a1a;--text-mid:#3a4a3a;--text-light:#5a6a5a;}
@@ -88,6 +89,8 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   .values-grid{grid-template-columns:1fr;}
   .vision-band{grid-template-columns:1fr;padding:2rem 1.5rem;gap:1.5rem;}
   .vision-body{border-left:none;padding-left:0;border-top:1px solid rgba(255,255,255,0.2);padding-top:1rem;}
+  .farm-stats{grid-template-columns:repeat(3,1fr)!important;}
+  .land-cover-wrap{padding:0 1.5rem 3rem!important;}
   footer{flex-direction:column;gap:1rem;padding:2rem 1.5rem;text-align:center;}
 }
 @media(max-width:480px){
@@ -143,7 +146,7 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
 </div>
 
 <!-- Stats bar -->
-<div style="background:var(--sky-dark);display:grid;grid-template-columns:repeat(6,1fr);border-top:3px solid var(--pasture);">
+<div class="farm-stats" style="background:var(--sky-dark);display:grid;grid-template-columns:repeat(6,1fr);border-top:3px solid var(--pasture);">
   <div style="padding:1.6rem 1.2rem;border-right:1px solid rgba(255,255,255,0.08);text-align:center;"><div style="font-family:'Dancing Script',cursive;font-size:1.8rem;color:white;line-height:1;margin-bottom:0.15rem;">1,428 ha</div><div style="font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);font-weight:300;">Total whenua</div></div>
   <div style="padding:1.6rem 1.2rem;border-right:1px solid rgba(255,255,255,0.08);text-align:center;"><div style="font-family:'Dancing Script',cursive;font-size:1.8rem;color:white;line-height:1;margin-bottom:0.15rem;">836 ha</div><div style="font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);font-weight:300;">Effective area</div></div>
   <div style="padding:1.6rem 1.2rem;border-right:1px solid rgba(255,255,255,0.08);text-align:center;"><div style="font-family:'Dancing Script',cursive;font-size:1.8rem;color:white;line-height:1;margin-bottom:0.15rem;">55%</div><div style="font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);font-weight:300;">Hill country</div></div>
@@ -153,10 +156,9 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
 </div>
 
 <!-- ✏️ Land & terrain section
-     farm-1.jpg = homestead aerial
-     farm-2.jpg = wider homestead valley
-     farm-3.jpg = turkeys in paddock
-     farm-4.jpg = red UGV on track
+     farm-1.jpg = station homestead (tall)
+     farm-2.jpg = homestead valley (bottom left)
+     farm-3.jpg = turkeys in paddock (bottom right)
 -->
 <section class="section">
   <div class="two-col" style="max-width:1200px;margin:0 auto;">
@@ -168,12 +170,12 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
       <p class="lead">417 hectares of indigenous bush and scrub provide natural erosion control in the steeper gullies, alongside 144 hectares of production forestry.</p>
     </div>
     <div class="photo-stack">
-      <!-- farm-4 = UGV on track — tall/wide shot works well here -->
-      <img src="/tutumatai/images/farm-1.jpg" alt="farm-4 — UGV on station track" class="ps-img tall"
-           onerror="this.outerHTML='<div class=\'ph\' style=\'height:220px;grid-column:1/-1;\'><span>TEMP_TEMP_farm-6.jpg</span></div>'">
-      <!-- farm-1 = homestead from above -->
-      <img src="/tutumatai/images/farm-2.jpg" alt="farm-1 — station homestead" class="ps-img"
-           onerror="this.outerHTML='<div class=\'ph\' style=\'height:200px;\'><span>farm-6.jpg</span></div>'">
+      <!-- farm-1 = station homestead — tall shot -->
+      <img src="/tutumatai/images/farm-1.jpg" alt="farm-2 — homestead valley" class="ps-img tall"
+           onerror="this.outerHTML='<div class=\'ph\' style=\'height:220px;grid-column:1/-1;\'><span>farm-1.jpg</span></div>'">
+      <!-- farm-2 = homestead valley -->
+      <img src="/tutumatai/images/farm-2.jpg" alt="farm-2 — homestead valley" class="ps-img"
+           onerror="this.outerHTML='<div class=\'ph\' style=\'height:200px;\'><span>farm-2.jpg</span></div>'">
       <!-- farm-3 = turkeys -->
       <img src="/tutumatai/images/farm-3.jpg" alt="farm-3 — wildlife on the station" class="ps-img"
            onerror="this.outerHTML='<div class=\'ph\' style=\'height:200px;\'><span>farm-3.jpg</span></div>'">
@@ -182,7 +184,7 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
 </section>
 
 <!-- Land cover blocks -->
-<div style="background:var(--cream);padding:0 4rem 4rem;">
+<div class="land-cover-wrap" style="background:var(--cream);padding:0 4rem 4rem;">
   <div style="max-width:1200px;margin:0 auto;">
     <div class="sec-label" style="padding-top:0;">Land cover</div>
     <h2>How the land is used</h2>
@@ -198,23 +200,23 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   </div>
 </div>
 
-<!-- ✏️ Full width photo: farm-5 = wide valley shot -->
-<img src="/tutumatai/images/farm-4.jpg" alt="farm-5 — station landscape" class="photo-full"
+<!-- ✏️ Full width photo: farm-4.jpg = wide valley landscape -->
+<img src="/tutumatai/images/farm-4.jpg" alt="farm-4 — wide landscape" class="photo-full"
      onerror="this.outerHTML='<div class=\'ph\' style=\'height:420px;\'><span>farm-4.jpg</span></div>'">
 
 <!-- ✏️ Sheep & beef section
-     farm-6 = cattle with cabbage trees (batch 3)
-     farm-2 = wider homestead valley
-     farm-8 = cattle herd at fence (batch 3)
+     farm-5.jpg = cattle with cabbage trees (tall)
+     farm-6.jpg = homestead valley (bottom left)
+     farm-7.jpg = Walker Rd (bottom right)
 -->
 <section class="section cream">
   <div class="two-col flip" style="max-width:1200px;margin:0 auto;">
     <div class="photo-stack">
-      <img src="/tutumatai/images/farm-5.jpg" alt="farm-6 — cattle at dusk" class="ps-img tall"
+      <img src="/tutumatai/images/farm-5.jpg" alt="farm-5 — cattle with cabbage trees" class="ps-img tall"
            onerror="this.outerHTML='<div class=\'ph\' style=\'height:220px;grid-column:1/-1;\'><span>farm-5.jpg</span></div>'">
-      <img src="/tutumatai/images/farm-6.jpg" alt="farm-2 — station homestead valley" class="ps-img"
+      <img src="/tutumatai/images/farm-6.jpg" alt="farm-6 — homestead valley" class="ps-img"
            onerror="this.outerHTML='<div class=\'ph\' style=\'height:200px;\'><span>farm-6.jpg</span></div>'">
-      <img src="/tutumatai/images/farm-7.jpg" alt="farm-8 — cattle herd" class="ps-img"
+      <img src="/tutumatai/images/farm-7.jpg" alt="farm-7 — Walker Rd" class="ps-img"
            onerror="this.outerHTML='<div class=\'ph\' style=\'height:200px;\'><span>farm-7.jpg</span></div>'">
     </div>
     <div>
