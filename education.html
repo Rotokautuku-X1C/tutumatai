@@ -50,8 +50,8 @@ h2{font-family:'Dancing Script',cursive;font-size:clamp(1.8rem,3vw,2.6rem);color
 /* Recipients */
 .recipients{display:grid;grid-template-columns:repeat(5,1fr);gap:0.8rem;margin-top:1.5rem;}
 .r-card{background:white;border-top:2px solid var(--pasture);overflow:hidden;}
-.r-photo{width:100%;height:110px;object-fit:cover;object-position:center top;display:block;}
-.r-ph{width:100%;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;}
+.r-photo{width:100%;height:150px;object-fit:cover;object-position:center 20%;display:block;}
+.r-ph{width:100%;height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;}
 .r-ph .r-icon{font-size:1.6rem;opacity:0.3;}
 .r-ph span{font-family:monospace;font-size:0.55rem;color:rgba(255,255,255,0.4);background:rgba(0,0,0,0.3);padding:0.1rem 0.3rem;border-radius:2px;text-align:center;max-width:90%;word-break:break-all;display:block;}
 .r-body{padding:0.7rem;}
@@ -100,7 +100,7 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
     <li><a href="/tutumatai/education.html" class="active">Education</a></li>
     <li><a href="/tutumatai/news.html">News</a></li>
     <li><a href="/tutumatai/contact.html">Contact</a></li>
-    <li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li>
+    <li><a href="#portal" class="nav-portal" style="opacity:0.6;cursor:default;" title="Coming soon">Portal — Coming Soon</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
@@ -111,7 +111,7 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   <a href="/tutumatai/education.html" class="active">Education</a>
   <a href="/tutumatai/news.html">News</a>
   <a href="/tutumatai/contact.html">Contact</a>
-  <a href="#portal" class="mob-portal">Shareholder Portal →</a>
+  <a href="#portal" class="mob-portal" style="opacity:0.6;">Shareholder Portal — Coming Soon</a>
 </div>
 
 <!-- ✏️ Hero photo: education-hero.jpg -->
@@ -148,7 +148,7 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
      <img src="/tutumatai/images/FILENAME.jpg" class="r-photo" alt="Name">
      Gradient colours are page accents — leave as-is unless asked.
 -->
-<section class="section">
+<section class="section" id="2026-recipients">
   <div class="inner">
     <div class="sec-label">2026 recipients</div>
     <h2>Class of 2026</h2>
