@@ -15,9 +15,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-links a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:0.78rem;letter-spacing:0.07em;text-transform:uppercase;transition:color 0.2s;}
 .nav-links a:hover,.nav-links a.active{color:white;}
 .nav-portal{background:var(--pasture)!important;color:white!important;padding:0.4rem 1rem;border-radius:2px;font-weight:600!important;}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:0.5rem;flex-direction:column;gap:5px;}
+.nav-hamburger span{display:block;width:22px;height:2px;background:white;border-radius:1px;}
+.nav-mobile{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(30,61,107,0.98);z-index:99;padding:1rem 0;border-bottom:2px solid var(--pasture);}
+.nav-mobile a{display:block;color:rgba(255,255,255,0.85);text-decoration:none;font-size:0.85rem;letter-spacing:0.07em;text-transform:uppercase;padding:0.8rem 2rem;border-bottom:1px solid rgba(255,255,255,0.06);}
+.nav-mobile a:hover{color:white;background:rgba(255,255,255,0.05);}
+.nav-mobile .mob-portal{background:var(--pasture);color:white!important;margin:0.8rem 2rem 0;padding:0.7rem 1rem;text-align:center;display:block;}
 .hero{margin-top:64px;position:relative;display:flex;align-items:flex-end;overflow:hidden;}
-.hero-img{position:absolute;inset:0;background-size:cover;background-position:center 40%;}
-.hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(30,61,107,0.05) 0%,rgba(20,40,20,0.78) 100%);}
+.hero-img{position:absolute;inset:0;background-size:cover;background-position:center center;}
+.hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.45) 100%);}
 .hero-content{position:relative;z-index:2;padding:0 4rem 3rem;}
 .eyebrow{font-size:0.65rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:0.7rem;display:flex;align-items:center;gap:0.7rem;font-weight:300;}
 .eyebrow::before{content:'';display:block;width:24px;height:1px;background:rgba(255,255,255,0.4);}
@@ -26,7 +32,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .section{padding:4.5rem 4rem;}
 .section.cream{background:var(--cream);}
 .section.sky{background:var(--light-sky);}
-.section.dark{background:var(--sky-dark);}
 .inner{max-width:1200px;margin:0 auto;}
 .sec-label{font-size:0.63rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--pasture);margin-bottom:0.6rem;display:flex;align-items:center;gap:0.7rem;font-weight:600;}
 .sec-label::before{content:'';display:block;width:18px;height:2px;background:var(--pasture);}
@@ -39,14 +44,12 @@ h2.light{color:white;}
 .two-col.flip{direction:rtl;}
 .two-col.flip>*{direction:ltr;}
 .photo-stack{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
-.photo-stack img{width:100%;height:200px;object-fit:cover;display:block;}
-.photo-stack img.tall{grid-column:1/-1;height:220px;}
+.photo-stack .ps-img{width:100%;height:200px;object-fit:cover;display:block;}
+.photo-stack .ps-img.tall{grid-column:1/-1;height:220px;}
 .photo-full{width:100%;height:420px;object-fit:cover;display:block;}
-footer{background:#111e2e;padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;border-top:3px solid var(--pasture);}
-footer .logo{font-family:'Dancing Script',cursive;font-size:1.3rem;color:white;}
-footer .logo span{display:block;font-family:'Source Sans 3',sans-serif;font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.3);font-weight:300;margin-top:2px;}
-footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
-
+/* placeholder */
+.ph{display:flex;align-items:center;justify-content:center;background:#2a3a2a;}
+.ph span{font-family:monospace;font-size:0.65rem;color:rgba(255,255,255,0.55);background:rgba(0,0,0,0.45);padding:0.2rem 0.5rem;border-radius:2px;text-align:center;}
 .land-blocks{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,104,40,0.12);border:1px solid rgba(74,104,40,0.12);max-width:1200px;margin:2rem auto 0;}
 .land-block{background:white;padding:1.6rem;}
 .land-block-num{font-family:'Dancing Script',cursive;font-size:2.2rem;color:var(--pasture);line-height:1;margin-bottom:0.2rem;}
@@ -65,10 +68,60 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
 .vision-te-reo{font-family:'Dancing Script',cursive;font-size:1.5rem;color:rgba(255,255,255,0.85);line-height:1.3;font-style:italic;}
 .vision-translation{color:rgba(255,255,255,0.55);font-size:0.78rem;line-height:1.6;font-weight:300;margin-top:0.4rem;}
 .vision-body{color:rgba(255,255,255,0.8);font-size:0.95rem;line-height:1.8;font-weight:300;border-left:2px solid rgba(255,255,255,0.2);padding-left:2rem;}
+footer{background:#111e2e;padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;border-top:3px solid var(--pasture);}
+footer .logo{font-family:'Dancing Script',cursive;font-size:1.3rem;color:white;}
+footer .logo span{display:block;font-family:'Source Sans 3',sans-serif;font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.3);font-weight:300;margin-top:2px;}
+footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
+@media(max-width:768px){
+  nav{padding:0 1.2rem;}
+  .nav-links{display:none;}
+  .nav-hamburger{display:flex;}
+  .nav-mobile.open{display:block;}
+  .hero-content{padding:0 1.5rem 2rem;}
+  .section{padding:3rem 1.5rem;}
+  .two-col,.two-col.flip{grid-template-columns:1fr;direction:ltr;gap:2rem;}
+  .photo-stack{grid-template-columns:1fr;}
+  .photo-stack .ps-img.tall{height:200px;}
+  .photo-full{height:220px;}
+  .land-blocks{grid-template-columns:1fr 1fr;}
+  .env-grid{grid-template-columns:1fr;}
+  .values-grid{grid-template-columns:1fr;}
+  .vision-band{grid-template-columns:1fr;padding:2rem 1.5rem;gap:1.5rem;}
+  .vision-body{border-left:none;padding-left:0;border-top:1px solid rgba(255,255,255,0.2);padding-top:1rem;}
+  footer{flex-direction:column;gap:1rem;padding:2rem 1.5rem;text-align:center;}
+}
+@media(max-width:480px){
+  .land-blocks{grid-template-columns:1fr;}
+}
 </style>
-</head><body>
-<!-- ✏️ EDIT: change text between tags. To swap photos change filename after images/ in src or style attributes. --><nav><a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a><ul class="nav-links"><li><a href="/tutumatai/about.html">About</a></li><li><a href="/tutumatai/farm.html" class="active">The Farm</a></li><li><a href="/tutumatai/people.html">Our People</a></li><li><a href="/tutumatai/education.html">Education</a></li><li><a href="/tutumatai/news.html">News</a></li><li><a href="/tutumatai/contact.html">Contact</a></li><li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li></ul></nav>
-<!-- ✏️ Hero photo: change farm-hero.jpg to swap -->
+</head>
+<body>
+
+<!-- ✏️ NAV -->
+<nav>
+  <a href="/tutumatai/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a>
+  <ul class="nav-links">
+    <li><a href="/tutumatai/about.html">About</a></li>
+    <li><a href="/tutumatai/farm.html" class="active">The Farm</a></li>
+    <li><a href="/tutumatai/people.html">Our People</a></li>
+    <li><a href="/tutumatai/education.html">Education</a></li>
+    <li><a href="/tutumatai/news.html">News</a></li>
+    <li><a href="/tutumatai/contact.html">Contact</a></li>
+    <li><a href="#portal" class="nav-portal">Shareholder Portal →</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mobile" id="mobileNav">
+  <a href="/tutumatai/about.html">About</a>
+  <a href="/tutumatai/farm.html" class="active">The Farm</a>
+  <a href="/tutumatai/people.html">Our People</a>
+  <a href="/tutumatai/education.html">Education</a>
+  <a href="/tutumatai/news.html">News</a>
+  <a href="/tutumatai/contact.html">Contact</a>
+  <a href="#portal" class="mob-portal">Shareholder Portal →</a>
+</div>
+
+<!-- ✏️ Hero photo: farm-hero.jpg -->
 <section class="hero" style="height:70vh;">
   <div class="hero-img" style="background-image:url('/tutumatai/images/farm-hero.jpg');"></div>
   <div class="hero-content">
@@ -89,7 +142,7 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   </div>
 </div>
 
-<!-- Stats -->
+<!-- Stats bar -->
 <div style="background:var(--sky-dark);display:grid;grid-template-columns:repeat(6,1fr);border-top:3px solid var(--pasture);">
   <div style="padding:1.6rem 1.2rem;border-right:1px solid rgba(255,255,255,0.08);text-align:center;"><div style="font-family:'Dancing Script',cursive;font-size:1.8rem;color:white;line-height:1;margin-bottom:0.15rem;">1,428 ha</div><div style="font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);font-weight:300;">Total whenua</div></div>
   <div style="padding:1.6rem 1.2rem;border-right:1px solid rgba(255,255,255,0.08);text-align:center;"><div style="font-family:'Dancing Script',cursive;font-size:1.8rem;color:white;line-height:1;margin-bottom:0.15rem;">836 ha</div><div style="font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);font-weight:300;">Effective area</div></div>
@@ -99,7 +152,12 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   <div style="padding:1.6rem 1.2rem;text-align:center;"><div style="font-family:'Dancing Script',cursive;font-size:1.8rem;color:white;line-height:1;margin-bottom:0.15rem;">9.3 km</div><div style="font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);font-weight:300;">Waterways fenced</div></div>
 </div>
 
-<!-- ✏️ Land & terrain section — photos: change farm-ugv.jpg, farm-cattle-hill.jpg, farm-turkeys.jpg -->
+<!-- ✏️ Land & terrain section
+     farm-1.jpg = homestead aerial
+     farm-2.jpg = wider homestead valley
+     farm-3.jpg = turkeys in paddock
+     farm-4.jpg = red UGV on track
+-->
 <section class="section">
   <div class="two-col" style="max-width:1200px;margin:0 auto;">
     <div>
@@ -110,9 +168,15 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
       <p class="lead">417 hectares of indigenous bush and scrub provide natural erosion control in the steeper gullies, alongside 144 hectares of production forestry.</p>
     </div>
     <div class="photo-stack">
-      <img src="/tutumatai/images/farm-ugv.jpg" alt="Farm track and station operations" class="tall">
-      <img src="/tutumatai/images/farm-cattle-hill.jpg" alt="Cattle on the station hills">
-      <img src="/tutumatai/images/farm-turkeys.jpg" alt="Wildlife on the station pasture">
+      <!-- farm-4 = UGV on track — tall/wide shot works well here -->
+      <img src="/tutumatai/images/farm-1.jpg" alt="farm-4 — UGV on station track" class="ps-img tall"
+           onerror="this.outerHTML='<div class=\'ph\' style=\'height:220px;grid-column:1/-1;\'><span>TEMP_TEMP_farm-6.jpg</span></div>'">
+      <!-- farm-1 = homestead from above -->
+      <img src="/tutumatai/images/farm-2.jpg" alt="farm-1 — station homestead" class="ps-img"
+           onerror="this.outerHTML='<div class=\'ph\' style=\'height:200px;\'><span>farm-6.jpg</span></div>'">
+      <!-- farm-3 = turkeys -->
+      <img src="/tutumatai/images/farm-3.jpg" alt="farm-3 — wildlife on the station" class="ps-img"
+           onerror="this.outerHTML='<div class=\'ph\' style=\'height:200px;\'><span>farm-3.jpg</span></div>'">
     </div>
   </div>
 </section>
@@ -134,16 +198,24 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   </div>
 </div>
 
-<!-- ✏️ Full width photo: change farm-wide.jpg to swap -->
-<img src="/tutumatai/images/farm-wide.jpg" alt="Station landscape" class="photo-full">
+<!-- ✏️ Full width photo: farm-5 = wide valley shot -->
+<img src="/tutumatai/images/farm-4.jpg" alt="farm-5 — station landscape" class="photo-full"
+     onerror="this.outerHTML='<div class=\'ph\' style=\'height:420px;\'><span>farm-4.jpg</span></div>'">
 
-<!-- ✏️ Sheep & beef section — photo: change farm-cattle-sunset.jpg, farm-homestead.jpg -->
+<!-- ✏️ Sheep & beef section
+     farm-6 = cattle with cabbage trees (batch 3)
+     farm-2 = wider homestead valley
+     farm-8 = cattle herd at fence (batch 3)
+-->
 <section class="section cream">
   <div class="two-col flip" style="max-width:1200px;margin:0 auto;">
     <div class="photo-stack">
-      <img src="/tutumatai/images/farm-6.jpg" alt="Cattle at dusk" class="tall">
-      <img src="/tutumatai/images/farm-homestead.jpg" alt="Station homestead">
-      <img src="/tutumatai/images/farm-8.jpg" alt="Farm cattle">
+      <img src="/tutumatai/images/farm-5.jpg" alt="farm-6 — cattle at dusk" class="ps-img tall"
+           onerror="this.outerHTML='<div class=\'ph\' style=\'height:220px;grid-column:1/-1;\'><span>farm-5.jpg</span></div>'">
+      <img src="/tutumatai/images/farm-6.jpg" alt="farm-2 — station homestead valley" class="ps-img"
+           onerror="this.outerHTML='<div class=\'ph\' style=\'height:200px;\'><span>farm-6.jpg</span></div>'">
+      <img src="/tutumatai/images/farm-7.jpg" alt="farm-8 — cattle herd" class="ps-img"
+           onerror="this.outerHTML='<div class=\'ph\' style=\'height:200px;\'><span>farm-7.jpg</span></div>'">
     </div>
     <div>
       <div class="sec-label">Sheep &amp; beef</div>
@@ -172,7 +244,6 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
   </div>
 </section>
 
-<!-- Values -->
 <section class="section">
   <div class="inner">
     <div class="sec-label">Our values</div>
@@ -184,7 +255,17 @@ footer p{font-size:0.72rem;color:rgba(255,255,255,0.25);}
     </div>
   </div>
 </section>
+
 <footer>
   <div class="logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · 307 Mangaoporo Road, RD 3, Ruatoria · Tairāwhiti</span></div>
   <p>tutumataistation.nz — The Farm</p>
-</footer></body></html>
+</footer>
+
+<script>
+const btn = document.getElementById('hamburger');
+const mob = document.getElementById('mobileNav');
+btn.addEventListener('click', () => mob.classList.toggle('open'));
+document.querySelectorAll('.nav-mobile a').forEach(a => a.addEventListener('click', () => mob.classList.remove('open')));
+</script>
+</body>
+</html>
