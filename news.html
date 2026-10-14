@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="description" content="News and updates from Tutumatai Station — AGM, farm operations and board news for shareholders and whānau."><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>News & Updates — Tutumatai Station</title>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/favicon-32.png">
@@ -40,7 +41,7 @@
   .nav-hamburger{display:flex;}
   .nav-mobile.open{display:block;}
   .hero-content{padding:0 1.5rem 2rem;}
-  .section{padding:3rem 1.5rem;}
+  .section{padding:2rem 1.25rem;}
   .news-grid{grid-template-columns:1fr 1fr;}
   .agm-box{grid-template-columns:1fr;gap:1rem;}
   footer{flex-direction:column;gap:1rem;padding:2rem 1.5rem;text-align:center;}
@@ -56,7 +57,7 @@
   <a href="/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a>
   <ul class="nav-links">
     <li><a href="/about.html">Our Tipuna</a></li>
-    <li><a href="/people.html">Our People</a></li>
+    <li><a href="/farm.html">The Farm</a></li>
     <li><a href="/governance.html">Governance</a></li>
     <li><a href="/education.html">Education</a></li>
     <li><a href="/news.html" class="active">News</a></li>
@@ -66,7 +67,7 @@
 </nav>
 <div class="nav-mobile" id="mobileNav">
   <a href="/about.html">Our Tipuna</a>
-  <a href="/people.html">Our People</a>
+  <a href="/farm.html">The Farm</a>
   <a href="/governance.html">Governance</a>
   <a href="/education.html">Education</a>
   <a href="/news.html" class="active">News</a>
@@ -74,13 +75,11 @@
 </div>
 
 <!-- ✏️ Hero photo: news-hero.jpg (Walker Rd sign, golden hour) -->
-<section class="hero" style="height:55vh;">
-  <div class="hero-img" style="background-image:url('/images/news-hero.jpg');background-position:center 40%;"></div>
-  <div class="hero-content">
-    <div class="eyebrow">Shareholder Updates · AGM · Farm News</div>
-    <h1>News &amp; Updates</h1>
-    <p class="hero-sub">Staying connected with our shareholders and whānau across Aotearoa.</p>
-  </div>
+<section class="framed-hero">
+  <div class="eyebrow">Shareholder Updates · AGM · Farm News</div>
+  <h1>News &amp; Updates</h1>
+  <p class="hero-sub">Staying connected with our shareholders and whānau across Aotearoa.</p>
+  <img src="/images/news-hero.jpg?v=20261015a" class="fh-photo" alt="Walker Rd sign at golden hour" style="object-position:center 40%;">
 </section>
 
 <!-- ✏️ AGM box — update date and details each year -->
@@ -91,7 +90,7 @@
     <div class="agm-box">
       <div>
         <h3>2026 AGM — Friday 23 October, at the Farm</h3>
-        <p>This year’s AGM will be held at Tutumatai Station on Friday 23 October 2026, with activities planned through the weekend to bring the whānau together. Notice, agenda, and proxy forms will be distributed in advance.</p>
+        <p>This year’s AGM will be held at Tutumatai Station on Friday 23 October 2026, with activities planned through the weekend to bring the whānau together. Notice, agenda, and proxy forms have been distributed to shareholders. If you have not received them, please contact Audine Grace-Kutia at <a href="mailto:audine.gracekutia@tutumataistation.nz" style="color:#fff;text-decoration:underline;">audine.gracekutia@tutumataistation.nz</a>.</p>
       </div>
     </div>
   </div>
@@ -108,12 +107,23 @@
   <div class="inner">
     <div class="sec-label">Latest news</div>
     <h2>From the station and the board</h2>
-    <p style="font-size:0.75rem;color:var(--text-light);font-weight:300;margin-top:-0.5rem;margin-bottom:0;">Last updated: May 2026</p>
+    <p style="font-size:0.75rem;color:var(--text-light);font-weight:300;margin-top:-0.5rem;margin-bottom:0;">Last updated: October 2026</p>
     <div class="news-grid">
+
+      <!-- Pounamu joins as Shepherd -->
+      <div class="news-card">
+        <img src="/images/farm-1.jpg?v=20261015a" class="news-card-img" alt="Fence line on the station" style="object-position:center;">
+        <div class="news-body">
+          <div class="news-tag">Farm Operations</div>
+          <h3>Pounamu Reeves joins as Shepherd</h3>
+          <p>Pounamu Reeves has joined the station as Shepherd. An experienced fencer who has studied carpentry, Pounamu provides day-to-day support to Shane and the rest of the farm team.</p>
+          <div class="news-date">September 2026</div>
+        </div>
+      </div>
 
       <!-- Website launch (#48) -->
       <div class="news-card">
-        <div class="news-card-ph"><div class="ph-icon">🌐</div><span>news-website.jpg</span></div>
+        <img src="/images/home-hero-web.jpg?v=20261015a" class="news-card-img" alt="The valley at Tutumatai Station" style="object-position:center;">
         <div class="news-body">
           <div class="news-tag">Digital</div>
           <h3>New website launched</h3>
@@ -124,7 +134,7 @@
 
       <!-- Shane appointed Farm Manager (#50) -->
       <div class="news-card">
-        <div class="news-card-ph"><div class="ph-icon">🐑</div><span>news-shane.jpg</span></div>
+        <img src="/images/staff-1.jpg?v=20261015a" class="news-card-img" alt="Shane Sergent" style="object-position:center 25%;">
         <div class="news-body">
           <div class="news-tag">Farm Operations</div>
           <h3>Shane Sergent appointed Farm Manager</h3>
@@ -135,7 +145,7 @@
 
       <!-- Digital modernisation (kept) -->
       <div class="news-card">
-        <div class="news-card-ph"><div class="ph-icon">📋</div><span>news-4.jpg</span></div>
+        <img src="/images/farm-6.jpg?v=20261015a" class="news-card-img" alt="Station buildings" style="object-position:center;">
         <div class="news-body">
           <div class="news-tag">Governance</div>
           <h3>Digital modernisation programme</h3>
@@ -146,8 +156,7 @@
 
       <!-- Farm Environment Plan (kept) -->
       <div class="news-card">
-        <img src="/images/news-2.jpg" class="news-card-img" alt="Station landscape"
-             onerror="this.outerHTML='<div class=\'news-card-ph\'><div class=\'ph-icon\'>🌿</div><span>news-2.jpg</span></div>'">
+        <img src="/images/farm-2.jpg?v=20261015a" class="news-card-img" alt="Station landscape" style="object-position:center;">
         <div class="news-body">
           <div class="news-tag">Farm Operations</div>
           <h3>Farm Environment Plan completed</h3>

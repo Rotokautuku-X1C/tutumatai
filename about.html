@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="description" content="Our tipuna — the whakapapa of Raana Te Iti Walker and Mary Roa Milner, and the first generation of Tutumatai Station."><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Our Tipuna — Tutumatai Station</title>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/favicon-32.png">
@@ -9,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 <style>
-.tipuna-hero{margin-top:64px;background:#394e3d;color:white;padding:2.5rem 2rem 3rem;text-align:center;}
+.tipuna-hero{margin-top:64px;background:#394e3d;color:white;padding:2rem 2rem 2.25rem;text-align:center;}
 .th-head{max-width:1000px;margin:0 auto 1.5rem;}
 .th-head .eyebrow{justify-content:center;}
 .tipuna-hero h1{font-family:'Dancing Script',cursive;font-size:clamp(2.2rem,5vw,4.2rem);color:white;line-height:1.05;}
@@ -29,7 +30,7 @@
 .hero-sub{color:rgba(255,255,255,0.78);font-size:0.97rem;font-weight:300;max-width:500px;line-height:1.6;}
 .section.sky{background:var(--light-sky);}
 .lead{color:var(--text-mid);font-size:0.96rem;line-height:1.85;font-weight:300;max-width:700px;margin-bottom:1rem;}
-.founders{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;max-width:900px;margin:2rem auto 0;}
+.founders{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;max-width:900px;margin:0 auto;}
 .founder-photos{display:flex;gap:1.5rem;justify-content:center;}
 .founder-card{text-align:center;}
 .founder-img{width:160px;height:200px;object-fit:cover;object-position:center top;filter:grayscale(20%);display:block;margin:0 auto 0.8rem;}
@@ -40,9 +41,9 @@
 .strand-title{font-family:'Dancing Script',cursive;font-size:1.5rem;color:var(--sky-dark);margin:2.5rem 0 0.3rem;}
 .strand-sub{font-size:0.78rem;color:var(--text-light);font-weight:300;margin-bottom:0.5rem;}
 .tl{display:flex;flex-direction:column;gap:0;max-width:800px;margin:1rem auto 0;}
-.tl-item{display:grid;grid-template-columns:110px 1fr;gap:1.5rem;padding:1.3rem 0;border-bottom:1px solid rgba(74,104,40,0.12);}
+.tl-item{display:grid;grid-template-columns:120px 1fr;gap:1.25rem;padding:0.75rem 0;border-bottom:1px solid rgba(74,104,40,0.12);}
 .tl-item:last-child{border-bottom:none;}
-.tl-year{font-family:'Dancing Script',cursive;font-size:1.35rem;color:var(--pasture);line-height:1.1;padding-top:0.1rem;}
+.tl-year{font-family:'Dancing Script',cursive;font-size:1.2rem;color:var(--pasture);line-height:1.1;padding-top:0.1rem;white-space:nowrap;}
 .tl-content h4{font-size:0.9rem;font-weight:600;color:var(--sky-dark);margin-bottom:0.3rem;}
 .tl-content p{font-size:0.82rem;color:var(--text-light);line-height:1.6;font-weight:300;}
 @media(max-width:768px){
@@ -51,7 +52,7 @@
   .nav-hamburger{display:flex;}
   .nav-mobile.open{display:block;}
   .hero-content{padding:0 1.5rem 2rem;}
-  .section{padding:3rem 1.5rem;}
+  .section{padding:2rem 1.25rem;}
   .founders{grid-template-columns:1fr;gap:2rem;}
   .founder-photos{flex-wrap:wrap;}
   .tl-item{grid-template-columns:80px 1fr;gap:1rem;}
@@ -60,6 +61,29 @@
 @media(max-width:480px){
   .founder-photos{flex-direction:column;align-items:center;}
 }
+.com-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem;}
+.person-card{background:white;border-top:3px solid var(--pasture);overflow:hidden;}
+.person-photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;display:block;}
+.person-photo-ph{width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,#2a3a2a,#1a2a1a);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;}
+.person-photo-ph span{font-family:monospace;font-size:0.58rem;color:rgba(255,255,255,0.5);background:rgba(0,0,0,0.4);padding:0.15rem 0.4rem;border-radius:2px;text-align:center;max-width:90%;word-break:break-all;}
+.person-body{padding:0.9rem;}
+.person-name{font-family:'Dancing Script',cursive;font-size:1.1rem;color:var(--sky-dark);margin-bottom:0.1rem;line-height:1.2;}
+.person-role{font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--pasture);font-weight:600;margin-bottom:0.4rem;}
+  .g1-featured{display:grid;grid-template-columns:minmax(200px,280px) 1fr;gap:22px;margin-bottom:26px;align-items:stretch}
+  .g1-dates{color:#9a978f;font-size:0.82rem;margin:2px 0 3px;}
+  .g1-feature-text{background:#fff;border:1px solid #e6e3da;border-radius:8px;padding:20px 22px;display:flex;align-items:center;color:#6b6b63;font-style:italic;line-height:1.6}
+@media(max-width:900px){.com-grid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:768px){.com-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:760px){.g1-featured{grid-template-columns:1fr}}
+.boy-panel{border:none !important;display:grid !important;grid-template-columns:1fr minmax(220px,52%);gap:0;align-items:center !important;padding:0 !important;overflow:hidden;}
+.boy-feature{font-style:normal;background:var(--sky-dark);height:100%;display:flex;flex-direction:column;justify-content:center;padding:1.6rem 1.8rem;}
+.bf-eyebrow{font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(150,200,100,0.9);font-weight:600;margin-bottom:0.5rem;}
+.bf-title{font-family:'Dancing Script',cursive;font-size:1.6rem;color:#fff;line-height:1.15;margin-bottom:0.8rem;}
+.boy-feature p{color:rgba(255,255,255,0.82);font-style:normal;font-size:0.95rem;font-weight:300;line-height:1.7;margin:0;}
+.boy-photo{margin:0;height:100%;position:relative;}
+.boy-photo img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;min-height:260px;}
+.boy-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:0.5rem 0.8rem;font-size:0.68rem;letter-spacing:0.06em;color:rgba(255,255,255,0.9);font-style:normal;background:linear-gradient(to top,rgba(0,0,0,0.45),transparent);}
+@media(max-width:760px){.boy-panel{grid-template-columns:1fr;gap:0;}.boy-photo img{max-height:340px;}}
 </style>
 </head>
 <body>
@@ -68,7 +92,7 @@
   <a href="/index.html" class="nav-logo">Tutumatai Station<span>Rotokautuku X1C Incorporation · Tairāwhiti</span></a>
   <ul class="nav-links">
     <li><a href="/about.html" class="active">Our Tipuna</a></li>
-    <li><a href="/people.html">Our People</a></li>
+    <li><a href="/farm.html">The Farm</a></li>
     <li><a href="/governance.html">Governance</a></li>
     <li><a href="/education.html">Education</a></li>
     <li><a href="/news.html">News</a></li>
@@ -78,7 +102,7 @@
 </nav>
 <div class="nav-mobile" id="mobileNav">
   <a href="/about.html" class="active">Our Tipuna</a>
-  <a href="/people.html">Our People</a>
+  <a href="/farm.html">The Farm</a>
   <a href="/governance.html">Governance</a>
   <a href="/education.html">Education</a>
   <a href="/news.html">News</a>
@@ -90,7 +114,7 @@
   <div class="th-head">
     <div class="eyebrow">Rotokautuku X1C Incorporation · Tairāwhiti</div>
     <h1>Our Tipuna</h1>
-    <p class="th-sub">The whakapapa, the whenua, and the people who have led Tutumatai Station across the generations.</p>
+    <p class="th-sub">The whakapapa of Raana Te Iti Walker and Mary Roa Milner, and the first generation who followed.</p>
   </div>
   <img src="/images/tipuna-hero.jpg" srcset="/images/tipuna-hero.jpg 1x, /images/tipuna-hero@2x.jpg 2x" alt="Portraits of our tipuna" class="th-img" width="798" height="481">
   <div class="th-whakapapa">
@@ -135,47 +159,120 @@
   </div>
 </section>
 
-<!-- ✏️ Farming with purpose (moved from Farm) -->
+<a id="first-generation"></a>
+<!-- ✏️ FIRST GENERATION (G1) — children of Raana & Mary Roa.
+     Upload g1-1.jpg … g1-8.jpg to images/ and replace the [G1 name] text. Two rows of four, eldest first. -->
 <section class="section">
-  <div class="inner" style="max-width:760px;">
-    <div class="sec-label">Sheep &amp; beef</div>
-    <h2>Farming with purpose across generations</h2>
-    <p class="lead">Tutumatai is a traditional East Coast hill country sheep and beef operation. Breeding ewes, store lambs, and beef cattle are run across the full range of the station's country.</p>
-    <p class="lead">The station's farming programme is built around matching stock class to land class — utilising the flat and rolling country for finishing and wintering, and the hill country for breeding and growing stock.</p>
-    <p class="lead">A GAP Step 4 certification underpins the station's commitment to quality assurance and best-practice animal welfare.</p>
-  </div>
-</section>
-
-<!-- ✏️ TIMELINE — two strands. Replace yyyy–yyyy with confirmed dates as they are known. -->
-<section class="section sky">
   <div class="inner">
-    <div class="sec-label">Our history</div>
-    <h2>A history rooted in whenua</h2>
+    <div class="sec-label">Ngā uri — First Generation</div>
+    <h2>The First Generation</h2>
+    <p class="lead">The first generation — the tamariki of Raana Te Iti Walker and Mary Roa Milner, shown with their spouses.</p>
 
-    <h3 class="strand-title">The whenua</h3>
-    <div class="strand-sub">Key moments in the land and the Incorporation.</div>
-    <div class="tl">
-      <div class="tl-item"><div class="tl-year">2026</div><div class="tl-content"><h4>Tutumatai Homestead renovated</h4><p>The homestead is renovated and restored to its former glory.</p></div></div>
-      <div class="tl-item"><div class="tl-year">2016</div><div class="tl-content"><h4>Thatchers block added</h4><p>Approximately 200 ha is added to the station, expanding the area under the Incorporation’s care.</p></div></div>
-      <div class="tl-item"><div class="tl-year">2013</div><div class="tl-content"><h4>Forestry established</h4><p>151 ha of production forest is planted in 2013, part of approximately 198 ha of forest on the station today.</p></div></div>
-      <div class="tl-item"><div class="tl-year">1995</div><div class="tl-content"><h4>Committee of Management established</h4><p>An elected Committee of Management is formalised to govern the Incorporation on behalf of shareholders.</p></div></div>
-      <div class="tl-item"><div class="tl-year">1951</div><div class="tl-content"><h4>Rotokautuku X1C Incorporation formed</h4><p>The Incorporation is formally constituted on 26 January 1951 under Te Ture Whenua Māori Act, establishing the Chairperson role to govern on behalf of all shareholders.</p></div></div>
-      <div class="tl-item"><div class="tl-year">1932</div><div class="tl-content"><h4>Raana Tuterangi takes over</h4><p>On the passing of Raana Te Iti Walker, Raana Tuterangi takes over running the farm, continuing until his own passing in 1985.</p></div></div>
-      <div class="tl-item"><div class="tl-year">1921</div><div class="tl-content"><h4>Land leased to Papa Raana Te Iti</h4><p>The whenua at Tutumatai is leased to Raana Te Iti Walker, who runs the farm until his passing in 1932 — the beginning of the whānau’s stewardship of this land.</p></div></div>
+    <div class="g1-featured">
+      <div class="person-card">
+        <img src="/images/g1-1.jpg?v=20261014b" class="person-photo" alt="Raana Tuterangi"
+             onerror="this.outerHTML='<div class=\'person-photo-ph\'><span>g1-1.jpg</span></div>'">
+        <div class="person-body">
+          <div class="person-name">Raana Tuterangi (Boy)</div>
+          <div class="g1-dates">1909 – 1985</div>
+          <div class="person-role">m. Ani Reedy</div>
+        </div>
+      </div>
+      <div class="g1-feature-text boy-panel">
+        <div class="boy-feature">
+          <div class="bf-eyebrow">1932 · Taking over the whenua</div>
+          <div class="bf-title">Boy and Nanny Walker</div>
+          <p>Following the unexpected passing of Papa Raana Te Iti in 1932, Boy took over running the farm with Nanny Walker, at the age of 22 — with 13 children at home aged from 3 to 22.</p>
+        </div>
+        <figure class="boy-photo">
+          <img src="/images/walker-rd.jpg?v=20261014a" alt="Walker Rd sign beside the paddocks at Tutumatai" width="865" height="913">
+          <figcaption>Walker Rd, Tutumatai</figcaption>
+        </figure>
+      </div>
     </div>
 
-    <h3 class="strand-title">Our chairpeople</h3>
-    <div class="strand-sub">Those who have led the Committee of Management over the years.</div>
-    <div class="tl">
-      <div class="tl-item"><div class="tl-year">1932–1985</div><div class="tl-content"><h4>Raana Tuterangi</h4><p>First Chairperson — took over the whenua in 1932 when his father passed, and led until his own passing in 1985.</p></div></div>
-      <div class="tl-item"><div class="tl-year">yyyy–yyyy</div><div class="tl-content"><h4>Bill Walker</h4><p>Chairperson</p></div></div>
-      <div class="tl-item"><div class="tl-year">yyyy–yyyy</div><div class="tl-content"><h4>Jim Walker</h4><p>Chairperson</p></div></div>
-      <div class="tl-item"><div class="tl-year">yyyy–yyyy</div><div class="tl-content"><h4>Sam Walker</h4><p>Chairperson</p></div></div>
-      <div class="tl-item"><div class="tl-year">yyyy–yyyy</div><div class="tl-content"><h4>June Mead</h4><p>Chairperson</p></div></div>
-      <div class="tl-item"><div class="tl-year">2007–2016</div><div class="tl-content"><h4>Dan Kawhia</h4><p>Chairperson</p></div></div>
-      <div class="tl-item"><div class="tl-year">2017–2021</div><div class="tl-content"><h4>Jaye Woodford</h4><p>Chairperson</p></div></div>
-      <div class="tl-item"><div class="tl-year">2022–2025</div><div class="tl-content"><h4>Ed Kawhia</h4><p>Chairperson</p></div></div>
-      <div class="tl-item"><div class="tl-year">2026</div><div class="tl-content"><h4>Audine Grace Kutia</h4><p>Chairperson</p></div></div>
+    <div class="com-grid">
+
+      <div class="person-card">
+        <img src="/images/g1-2.jpg?v=20261014b" class="person-photo" alt="Ronald William (Ronnie)"
+             onerror="this.outerHTML='<div class=\'person-photo-ph\'><span>g1-2.jpg</span></div>'">
+        <div class="person-body">
+          <div class="person-name">Ronald William (Ronnie)</div>
+          <div class="g1-dates">b. 1911</div>
+          <div class="person-role">m. Maraea Kaku Poi</div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <img src="/images/g1-3.jpg?v=20261014b" class="person-photo" alt="Roberta (Hoppy)"
+             onerror="this.outerHTML='<div class=\'person-photo-ph\'><span>g1-3.jpg</span></div>'">
+        <div class="person-body">
+          <div class="person-name">Roberta (Hoppy)</div>
+          <div class="g1-dates">b. 1913</div>
+          <div class="person-role">m. John Tibble</div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <img src="/images/g1-4.jpg?v=20261014b" class="person-photo" alt="Keita Te Hauauru (Barn)"
+             onerror="this.outerHTML='<div class=\'person-photo-ph\'><span>g1-4.jpg</span></div>'">
+        <div class="person-body">
+          <div class="person-name">Keita Te Hauauru (Barn)</div>
+          <div class="g1-dates">b. 1915</div>
+          <div class="person-role">m. Wananga Te Ariki Haig (Walton)</div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <img src="/images/g1-5.jpg?v=20261014b" class="person-photo" alt="Te Oho Mauri (Munen)"
+             onerror="this.outerHTML='<div class=\'person-photo-ph\'><span>g1-5.jpg</span></div>'">
+        <div class="person-body">
+          <div class="person-name">Te Oho Mauri (Munen)</div>
+          <div class="g1-dates">b. 1917</div>
+          <div class="person-role">m. Morehu Whangapirita (Bussie)</div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <img src="/images/g1-6.jpg?v=20261014d" class="person-photo" alt="James Wi Hekopa (Jim)"
+             onerror="this.outerHTML='<div class=\'person-photo-ph\'><span>g1-6.jpg</span></div>'">
+        <div class="person-body">
+          <div class="person-name">James Wi Hekopa (Jim)</div>
+          <div class="g1-dates">b. 1920</div>
+          <div class="person-role">m. Tangi Taheke Harrison (Baby)</div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <img src="/images/g1-7.jpg?v=20261014b" class="person-photo" alt="George Kiwa (John)"
+             onerror="this.outerHTML='<div class=\'person-photo-ph\'><span>g1-7.jpg</span></div>'">
+        <div class="person-body">
+          <div class="person-name">George Kiwa (John)</div>
+          <div class="g1-dates">b. 1921</div>
+          <div class="person-role">m. Keita Ngarimu</div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <img src="/images/g1-8.jpg?v=20261014b" class="person-photo" alt="Henrietta (Henri)"
+             onerror="this.outerHTML='<div class=\'person-photo-ph\'><span>g1-8.jpg</span></div>'">
+        <div class="person-body">
+          <div class="person-name">Henrietta (Henri)</div>
+          <div class="g1-dates">b. 1924</div>
+          <div class="person-role">m. Eruera Kawhia</div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <img src="/images/g1-9.jpg?v=20261014b" class="person-photo" alt="Erica Te Rina (June)"
+             onerror="this.outerHTML='<div class=\'person-photo-ph\'><span>g1-9.jpg</span></div>'">
+        <div class="person-body">
+          <div class="person-name">Erica Te Rina (June)</div>
+          <div class="g1-dates">b. 1929</div>
+          <div class="person-role">m. Sidney Moko Mead</div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
