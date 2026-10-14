@@ -9,13 +9,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 <style>
-.people-hero{margin-top:64px;position:relative;overflow:hidden;}
-.people-hero img{width:100%;display:block;height:auto;}
-.people-hero-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(20,40,20,0.75),transparent);padding:2rem 4rem 2.5rem;}
+.people-hero{margin-top:64px;background:#394e3d;padding:2.5rem 2rem 3rem;text-align:center;display:flex;flex-direction:column;align-items:center;}
+.people-hero img{order:2;width:100%;max-width:760px;display:block;height:auto;box-shadow:0 6px 24px rgba(0,0,0,0.35);}
+.people-hero-overlay{order:1;margin-bottom:1.8rem;display:flex;flex-direction:column;align-items:center;}
 .people-hero-overlay .eyebrow{font-size:0.65rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:0.5rem;display:flex;align-items:center;gap:0.7rem;font-weight:300;}
 .people-hero-overlay .eyebrow::before{content:'';display:block;width:24px;height:1px;background:rgba(255,255,255,0.4);}
 .people-hero-overlay h1{font-family:'Dancing Script',cursive;font-size:clamp(2rem,4vw,3.5rem);color:white;line-height:1.05;text-shadow:0 2px 20px rgba(0,0,0,0.3);margin-bottom:0.4rem;}
-.people-hero-overlay .hero-sub{color:rgba(255,255,255,0.78);font-size:0.9rem;font-weight:300;max-width:500px;line-height:1.5;}
+.people-hero-overlay .hero-sub{color:rgba(255,255,255,0.78);font-size:0.97rem;font-weight:300;max-width:560px;line-height:1.6;}
 .people-hero-ph{width:100%;height:320px;background:#2a3a2a;display:flex;align-items:center;justify-content:center;}
 .people-hero-ph span{font-family:monospace;font-size:0.7rem;color:rgba(255,255,255,0.5);background:rgba(0,0,0,0.4);padding:0.3rem 0.7rem;border-radius:2px;}
 .section.sky{background:var(--light-sky);}
@@ -58,7 +58,7 @@ h2.light{color:white;}
   .nav-links{display:none;}
   .nav-hamburger{display:flex;}
   .nav-mobile.open{display:block;}
-  .people-hero-overlay{padding:1.5rem 1.5rem 2rem;}
+  .people-hero{padding:2rem 1rem 2.5rem;}
   .section{padding:3rem 1.5rem;}
   .com-grid{grid-template-columns:repeat(2,1fr);}
   .staff-grid{grid-template-columns:1fr 1fr;}
